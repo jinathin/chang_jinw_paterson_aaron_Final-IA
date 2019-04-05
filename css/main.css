@@ -1,0 +1,417 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden
+{
+	display: none;
+}
+
+/* General rules - scales images, videos to size of container */
+img, embed, object, video {
+  max-width: 100%; }
+
+/*switch box model*/
+html {
+  box-sizing: border-box; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/*Fix for scaling of images IE*/
+img {
+  -ms-interpolation-mode: bicubic; 
+}
+
+body
+{
+	font-family:'Trebuchet', Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0.03em;
+}
+
+a 
+{ 
+  color:#000; 
+  text-decoration: none;  
+  transition:all .1s linear 0s;
+}
+
+
+.siteContainer
+{
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+.box {
+  background-color: SlateBlue;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+/*.hero, .column1, .column2, .column3, .column4, .column5, .column6
+{
+	height: 400px;
+}*/
+
+/* logo at mobile */
+.logo
+{
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: Slateblue;
+}
+
+/* start of hamburger toggle */
+#hamNav
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#hamNav button.expanded
+{
+	-webkit-transition: rotate(90deg);
+	transition: rotate(90deg);
+	transform: rotate(90deg);
+
+}
+
+#hamNav li a
+{
+	display: block;
+	padding: 10px 0px 10px 0px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+#hamNav li 
+{
+	border-bottom: 1px solid #fff;
+}
+
+#hamNav li:first-child
+{
+	border-top: 1px solid #fff;
+
+}
+
+#hamNav li:last-child
+{
+	border-top: 1px solid #fff;
+}
+
+/* button for hamburger pointer */
+#hamNav button
+{
+	background: url(../images/hamburger_icon.svg) center no-repeat;
+	width: 20px;
+	height: 20px;
+	border: 0px;
+	cursor: pointer;
+	  /*transition: all 400ms ease;*/
+ 		-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  				transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#burgerCon
+{
+
+	margin-top: 20px;
+	display: none;
+}
+
+#burgerCon.slideToggle
+{
+	display: block;
+
+}
+/* end of hamber toggle */
+
+/* hide the main nav in mobile */
+.showmainNav
+{
+	color: #fff;
+	display: none;
+}
+
+.navdropdown
+{
+	color: #fff;
+	display: none;
+}
+
+ /* Footer button styling */
+
+ #buttonNow
+ {
+    display: block;
+    position: relative;
+    top: -50px;
+    width: 200px;
+    background-color: purple;
+    padding: 21px 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    margin: 0 auto;
+ }
+
+ #buttonNow:hover
+ {
+    background-color: SlateBlue;
+ }
+
+/* Universal button styling */
+.button
+{
+
+	display: block;
+    position: relative;
+	width: 200px;
+    background-color: purple;
+    padding: 21px 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+/* Universal button styling */
+.button:hover
+{
+	display: block;
+    position: relative;
+	width: 200px;
+    background-color: ;
+    padding: 21px 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+/* Space the feature images with padding */
+.projectsLibrary
+{
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+.projectImage
+{
+	color: #fff;
+	min-width: 50%;
+	height: 400px;
+	background-color: Slateblue;
+	text-align: center; 
+	margin-bottom: 20px;
+	
+}
+
+/* Mobile Footer */
+.footerCon
+{
+	background-color: SlateBlue;
+	color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	margin: 10px;
+	margin-top: 120px;
+}
+
+
+/* At 641 pixels and above do this */
+@media screen and (min-width: 641px){
+	
+	/* Display content side by side */
+	#mainHeader
+	{
+		display: flex;
+		flex-direction: row;
+	}
+	/* center the content the the container */
+	.products
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	/* hide the hamburger at a bigger screen above 641px */
+		#hamNav
+	{
+		display: none;
+	
+	}
+		
+	.box
+	{
+		flex: 1 1 auto;
+	}
+
+	.nav
+	{
+		flex: 0 1 600px;
+	}
+
+	.logo
+	{
+		margin-left: 20px;
+		margin-right: 20px;
+		flex: 0 1 200px;
+	}
+
+	/* Reveal menu structure */
+	.showmainNav
+	{	
+		display: block;
+		flex: 0 1 800px; /*flex 0 keeps nav from expanding too far and touching logo*/
+		margin-left: auto;
+	}
+
+	.showmainNav li
+	{
+		display: inline-block;
+	}
+
+	/* menu title space and styling */
+	.showmainNav li a
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	/* drop downmenu start  */
+	li:not(.nav-dropdown li) 
+	{
+		display: block;
+		float: left;
+		padding: 10px;
+		position: relative;
+		text-decoration: none;
+		transition-duration: 0.2s;
+	}
+	
+	li:hover 
+	{
+		cursor: pointer;
+	}
+
+	/* Hide the menu a standard */
+	ul li ul 
+	{
+		width: 170px;
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		-webkit-transition: all 600ms cubic-bezier(1, 0, 0, 1);
+  		transition:         all 600ms cubic-bezier(1, 0, 0, 1);
+		margin-top: 10px;
+		/*	display: none; */	}
+
+	ul li:hover > ul, ul li:focus within > ul, ul li ul:hover 
+	{
+		visibility: visible;
+		display: block;
+		opacity: 1;
+		background-color: purple;
+		padding: 15px; 
+	}
+
+	ul li ul li 
+	{
+		clear: both;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+
+/* End menu  drop-down */
+
+/* Column structure */
+	.column1
+	{ 
+		background-color: purple;
+		width: 50%;
+
+	 }
+
+	 .column2
+	 {
+	 	background-color: purple;
+	 	width: 50%;
+	 }
+	
+	.column3
+	{
+		background-color: purple;
+		width: 50%;
+	}
+
+	.column4
+	{
+		background-color: purple;
+		width: 50%;
+	}
+
+	.column4
+	{
+		background-color: purple;
+		width: 50%;
+	}
+
+	.column5
+	{
+		background-color: purple;
+		width: 100%;
+	}
+
+	.column6
+	{
+		background-color: purple;
+		width: 50%;
+	}
+
+	.column7
+	{
+		background-color: purple;
+		width: 50%;
+	}
+	/* Project section structure */
+	.projectsContainer
+	{	
+		display: flex;
+		flex-direction: column;
+
+	}
+	
+	.projectsLibrary
+	{
+		display: flex;
+		flex-direction: row;
+
+	}
+	
+	.projectImage
+	{
+		background-color: purple;
+		min-width: 40%;
+		color: #fff;
+		margin-right: 40px;
+	}
+
+	/* About section stucture */
+
+
+
+}
