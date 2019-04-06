@@ -27,10 +27,17 @@ img {
 
 body
 {
-	font-family:'Trebuchet', Helvetica, sans-serif;
+	font-family: 'Source Sans Pro', Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	letter-spacing: 0.03em;
+}
+
+/* Universal point size at 16px for body text */
+p 
+{	
+	font-size: .873rem;
+	line-height: 28px;
 }
 
 a 
@@ -152,24 +159,31 @@ a
 
  /* Footer button styling */
 
- #buttonNow
- {
-    display: block;
-    position: relative;
-    top: -50px;
-    width: 200px;
-    background-color: purple;
-    padding: 21px 10px;
-    text-align: center;
-    color: #fff;
-    border-radius: 50px;
-    margin: 0 auto;
- }
+#subsBut
+{
+	display: block;
+	position: relative;
+	top: -50px;
+	width: 200px;
+	background-color: purple;
+	padding: 21px 10px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50px;
+	margin: 0 auto;
+}
+/* subscribe button hover */
+#subsBut:hover
+{
+	background-color: SlateBlue;
+}
 
- #buttonNow:hover
- {
-    background-color: SlateBlue;
- }
+/* Subscribe Info for mobile is hidden */
+.subscribeInfo
+{
+	display: none;
+}
+
 
 /* Universal button styling */
 .button
@@ -199,6 +213,7 @@ a
     border-radius: 50px;
     margin: 0 auto;
 }
+
 
 /* Space the feature images with padding */
 .projectsLibrary
@@ -410,6 +425,50 @@ a
 		margin-right: 40px;
 	}
 
+	/* subscribe container */
+	
+		#subsBut
+	 {
+		top: 0;
+		width: 200px;
+		background-color: purple;
+		padding: 21px 10px;
+		text-align: center;
+		color: #fff;
+		border-radius: 50px;
+		margin-right: 0;
+	 }
+
+	/* subscribe button hover */
+	 #subsBut:hover
+	 {
+	    background-color: SlateBlue;
+	 }
+
+	/* Reveal the subscribe Info */
+	.subscribeInfo
+	{
+		display: block;
+		width: 270px;
+		height: 0;
+	    color: #000;
+	    text-align: left;
+	    border-right: 1px solid #fff;
+	}
+
+	.subscribeCon
+	{
+
+		width: 600px;
+		position: relative;
+		top: -70px;
+		border-radius: 4px;
+		padding: 20px;
+		margin: 0 auto;
+		background-color: white;
+		box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+        0 5px 15px 0 rgba(0,0,0,0.08);
+	}
 	/* About section stucture */
 
 
