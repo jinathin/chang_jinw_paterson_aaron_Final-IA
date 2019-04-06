@@ -233,6 +233,17 @@ a
 	
 }
 
+/* About section structure */
+
+
+
+/* Contact section structure */
+
+.contactForm
+{
+	
+}
+
 /* Mobile Footer */
 .footerCon
 {
@@ -245,7 +256,8 @@ a
 	margin-top: 120px;
 }
 
-
+/******** MEDIA QUERY START **********/
+/************************************/
 /* At 641 pixels and above do this */
 @media screen and (min-width: 641px){
 	
@@ -440,12 +452,26 @@ a
 	 }
 
 	/* subscribe button hover */
+
 	 #subsBut:hover
 	 {
 	    background-color: SlateBlue;
 	 }
 
+	/* Button goes to the left on desktop and tablet sizes */
+	.button
+	{
+		margin: 0;
+	}
+	/* Button hover structure */
+	.button:hover
+	{
+		background-color: Slateblue;
+		margin: 0;
+	}
+
 	/* Reveal the subscribe Info */
+
 	.subscribeInfo
 	{
 		display: block;
@@ -470,7 +496,20 @@ a
         0 5px 15px 0 rgba(0,0,0,0.08);
 	}
 	/* About section stucture */
+	
 
 
+	
+	/* Contact section structure */
+	.contactForm
+	{
+		width: 700px;
+		height: 450px;
+		padding: 20px;
+		margin: 0 auto;
+		
+	}
 
+
+	
 }
