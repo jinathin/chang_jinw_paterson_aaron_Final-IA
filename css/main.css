@@ -47,6 +47,16 @@ a
   transition:all .1s linear 0s;
 }
 
+/* General section title universal structure for mobile */
+.sectionTitle h2
+{
+	font-family: 'Noticia Text', Georgia, serif;
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 20px;
+}
 
 .siteContainer
 {
@@ -92,14 +102,15 @@ a
 }
 
 
-/* logo at mobile */
-.logo
+/* Main logo at mobile */
+#traaLogo
 {
-	width: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: Slateblue;
+  display: block;
+  margin-top: 40px;
+  max-width: 250px;
+  margin: 0 auto;
 }
+
 
 /* start of hamburger toggle */
 #hamNav
@@ -155,7 +166,6 @@ a
 
 #burgerCon
 {
-
 	margin-top: 20px;
 	display: none;
 }
@@ -163,7 +173,6 @@ a
 #burgerCon.slideToggle
 {
 	display: block;
-
 }
 /* End of hamburger toggle */
 
@@ -208,7 +217,6 @@ a
 	display: none;
 }
 
-
 /* Universal button styling */
 .button
 {
@@ -238,6 +246,52 @@ a
     margin: 0 auto;
 }
 
+.hero
+{
+  background:url(../images/traa_hero_3.jpg) no-repeat center;
+  height: 450px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+}
+
+/* Light background tint */
+#infoTint
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 450px;
+}
+
+.heroCon
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	min-width: 340px;
+	margin: 0 auto;
+	padding: 30px;
+}
+.heroCon h3
+{
+	margin-top: 40px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Noticia Text', Georgia, serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.03em;
+	margin-top: 45px;
+	margin-bottom: 40px;
+
+}
+
+.heroCon p
+{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+}
 
 /* Space the feature images with padding */
 .projectsLibrary
@@ -263,11 +317,6 @@ a
 
 /* Contact section structure */
 
-.contactForm
-{
-	
-}
-
 /* Mobile Footer */
 .footerCon
 {
@@ -280,8 +329,8 @@ a
 	margin-top: 120px;
 }
 
-/******** MEDIA QUERY START **********/
-/************************************/
+/************* MEDIA QUERY START *************/
+/********************************************/
 /* At 641 pixels and above do this */
 @media screen and (min-width: 641px){
 
@@ -309,6 +358,7 @@ a
 	{
 		display: flex;
 		flex-direction: row;
+
 	}
 	/* center the content the the container */
 	.products
@@ -335,11 +385,19 @@ a
 		flex: 0 1 600px;
 	}
 
+	/* Main Logo */
 	.logo
 	{
 		margin-left: 20px;
 		margin-right: 20px;
 		flex: 0 1 200px;
+	}
+
+	#traaLogo
+	{
+		display: block;
+		max-width: 120px;
+		margin: 0 auto;
 	}
 
 	/* Reveal menu structure */
@@ -407,6 +465,43 @@ a
 	}
 
 /* End menu  drop-down */
+
+/* General section title universal structure for mobile */
+	.sectionTitle h2
+	{
+		font-family: 'Noticia Text', Georgia, serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.heroCon
+	{
+		max-width: 540px;
+		margin: 0 auto;
+	}
+
+	.heroCon h3
+	{
+		margin-top: 40px;
+		text-align: center;
+		color: #fff;
+		font-family: 'Noticia Text', Georgia, serif;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 32px;
+		letter-spacing: 0.03em;
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+
+.heroCon p
+{
+	color: #fff;
+	text-align: center;
+}
 
 /* Column structure */
 	.column1
@@ -504,6 +599,7 @@ a
 	/* Button goes to the left on desktop and tablet sizes */
 	.button
 	{
+
 		margin: 0;
 	}
 	/* Button hover structure */
