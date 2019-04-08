@@ -66,7 +66,7 @@ a
 
 .box 
 {
-  background-color: SlateBlue;
+  background-color: #417505;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -100,7 +100,6 @@ a
 	justify-content: space-between;
 	margin-left: 20px;
 }
-
 
 /* Main logo at mobile */
 #traaLogo
@@ -204,7 +203,7 @@ a
 	position: relative;
 	top: -50px;
 	width: 200px;
-	background-color: purple;
+	background-color: #68C20E;
 	padding: 21px 10px;
 	text-align: center;
 	color: #fff;
@@ -215,7 +214,7 @@ a
 /* subscribe button hover */
 #subsBut:hover
 {
-	background-color: SlateBlue;
+	background-color: #417505;
 }
 
 /* Subscribe Info for mobile is hidden */
@@ -255,20 +254,24 @@ a
 
 .hero
 {
-  background:url(../images/traa_hero_3.jpg) no-repeat center;
-  height: 450px;
-  margin-top: 40px;
-  margin-bottom: 30px;
+	height: 450px;
+  	margin-top: 40px;
+  	margin-bottom: 30px;
 
 }
 
-/* Light background tint */
-#infoTint
-{
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 450px;
-}
+.hero
+	{
+	background: 
+		linear-gradient(
+	    rgba(0, 0, 0, 0.3), 
+	    rgba(0, 0, 0, 0.3)
+    ),
+	    url(../images/traa_hero_3.jpg) no-repeat center;
+	}
 
+
+/* Hero section stucture */
 .heroCon
 {
 	display: flex;
@@ -278,6 +281,7 @@ a
 	margin: 0 auto;
 	padding: 30px;
 }
+
 .heroCon h3
 {
 	margin-top: 40px;
@@ -300,6 +304,11 @@ a
 	margin-bottom: 40px;
 }
 
+.projectCon p
+{
+	margin-bottom: 40px;
+}
+
 /* Space the feature images with padding */
 .projectsLibrary
 {
@@ -307,27 +316,99 @@ a
 	padding: 10px;
 }
 
-.projectImage
+.projectsInfo
 {
-	color: #fff;
-	min-width: 50%;
-	height: 400px;
-	background-color: Slateblue;
-	text-align: center; 
+	min-width: 250px;
+	text-align: center;
+	padding: 20px;
 	margin-bottom: 20px;
-	
 }
 
-/* About section structure */
+ /* Highlight text in yellow */ 
+#highLight
+{
+	color: #CA9731;
+}
+
+/* Trout and Rob Building Section */
+.subTitle
+{
+	font-family: 'Noticia Text', Georgia, serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.03em;
+	text-align: center; 
+	margin-top: 40px; 
+	margin-bottom: 40px;
+}
+
+.subtitleCopy 
+{
+	max-width: 310px;
+	text-align: center;
+	margin: 0 auto;
+}
 
 
+/* Push the */
+.column2{
+	margin-top: 40px;
+}
 
-/* Contact section structure */
+#sectionTint
+{
+	width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 450px;
+}
+
+
+.fundingCon
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.fundingCon h3
+{
+	color: #fff;
+	margin-top: 90px;
+}
+
+.fundingCon p
+{	max-width: 250px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.fundingHero
+{
+	background:url(../images/vashishtha-jogi-66779-unsplash_funding_3.jpg) no-repeat center;
+	height: 450px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.shopHero
+{
+	background:url(../images/traa_shop_2.jpg) no-repeat center;
+	height: 450px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.shopCon
+{
+	margin-top: 50px;
+}
 
 /* Mobile Footer */
 .footerCon
 {
-	background-color: SlateBlue;
+	background-color:  #254500;
 	color: #fff;
 	border-radius: 5px;
 	padding: 20px;
@@ -336,8 +417,9 @@ a
 	margin-top: 120px;
 }
 
-/************* MEDIA QUERY START *************/
-/********************************************/
+/*************************************************************************/
+/************* MEDIA QUERY START ****************************************/
+/***********************************************************************/
 /* At 641 pixels and above do this */
 @media screen and (min-width: 641px){
 
@@ -478,55 +560,25 @@ a
 
 /* End menu  drop-down */
 
-/* General section title universal structure for mobile */
-	.sectionTitle h2
-	{
-		font-family: 'Noticia Text', Georgia, serif;
-		font-weight: 700;
-		font-size: 36px;
-		letter-spacing: 0.03em;
-		text-align: center;
-		margin-bottom: 20px;
-	}
 
-	.heroCon
-	{
-		max-width: 540px;
-		margin: 0 auto;
-	}
-
-	.heroCon h3
-	{
-		margin-top: 40px;
-		text-align: center;
-		color: #fff;
-		font-family: 'Noticia Text', Georgia, serif;
-		font-weight: 700;
-		font-size: 28px;
-		line-height: 32px;
-		letter-spacing: 0.03em;
-		margin-top: 50px;
-		margin-bottom: 40px;
-	}
-
-.heroCon p
-{
-	color: #fff;
-	text-align: center;
-}
 
 /* Column structure */
 	.column1
-	{ 
-		background-color: purple;
+	{
 		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 	 }
 
 	 .column2
 	 {
-	 	background-color: purple;
 	 	width: 50%;
+	 	display: flex;
+		flex-direction: column;
+		align-items: center;
+	 	margin-top: 0px;
 	 }
 	
 	.column3
@@ -564,7 +616,21 @@ a
 		background-color: purple;
 		width: 50%;
 	}
+	
+	/******************************/
 	/* Project section structure */
+
+	.hero
+	{
+		background: 
+			linear-gradient(
+		    rgba(0, 0, 0, 0.3), 
+		    rgba(0, 0, 0, 0.3)
+	    ),
+	    url(../images/traa_hero_1.jpg) no-repeat center;
+	}
+
+
 	.projectsContainer
 	{	
 		display: flex;
@@ -587,13 +653,125 @@ a
 		margin-right: 40px;
 	}
 
-	/* subscribe container */
+	/* General section title universal structure for mobile */
+	.sectionTitle h2
+	{
+		font-family: 'Noticia Text', Georgia, serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		text-align: center;
+		margin-bottom: 20px;
+	}
 	
+	.heroCon
+	{
+		max-width: 540px;
+		margin: 0 auto;
+	}
+
+	.heroCon h3
+	{
+		margin-top: 40px;
+		text-align: center;
+		color: #fff;
+		font-family: 'Noticia Text', Georgia, serif;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 32px;
+		letter-spacing: 0.03em;
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+
+	.heroCon p
+	{
+		color: #fff;
+		text-align: center;
+	}
+
+	.projectsLibrary
+	{
+		margin-bottom: 30px;
+		padding: 10px;
+	}
+
+	.projectsInfo
+	{
+		max-width: 750px;
+		text-align: center;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+
+	.subTitle
+	{
+		font-family: 'Noticia Text', Georgia, serif;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+		text-align: center; 
+		margin-top: 40px; 
+		margin-bottom: 40px;
+	}
+
+	.subtitleCopy 
+	{
+		max-width: 360px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.projectCon
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.projectCon
+	{
+		margin-top: 40px;
+	}
+	/* Funding Desktop */
+	.fundingCon 
+	{
+
+		margin-top: 30px;
+		margin-bottom: 30px;
+
+	}
+		
+	.fundingCon p
+	{	max-width: 380px;
+
+	}
+	
+	.fundingHero
+{
+	background:url(../images/vashishtha-jogi-66779-unsplash_funding_1.jpg) no-repeat center;
+	height: 450px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+
+	
+
+
+
+
+
+
+
+
+
+	/* subscribe container */
 		#subsBut
 	 {
 		top: 0;
 		width: 200px;
-		background-color: purple;
+		background-color: #68C20E;
 		padding: 21px 10px;
 		text-align: center;
 		color: #fff;
@@ -605,15 +783,15 @@ a
 
 	 #subsBut:hover
 	 {
-	    background-color: SlateBlue;
+		background-color: #417505;
 	 }
 
 	/* Button goes to the left on desktop and tablet sizes */
 	.button
 	{
-
 		margin: 0;
 	}
+
 	/* Button hover structure */
 	.button:hover
 	{
@@ -622,7 +800,6 @@ a
 	}
 
 	/* Reveal the subscribe Info */
-
 	.subscribeInfo
 	{
 		display: block;
@@ -648,10 +825,6 @@ a
         0 5px 15px 0 rgba(0,0,0,0.08);
 
 	}
-	/* About section stucture */
-	
-
-
 	
 	/* Contact section structure */
 	.contactForm
