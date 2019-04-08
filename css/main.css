@@ -151,6 +151,13 @@ a
 	border-top: 1px solid #fff;
 }
 
+#mainHeader
+{
+
+	margin-top: 40px;
+
+}
+
 /* button for hamburger pointer */
 #hamNav button
 {
@@ -224,7 +231,7 @@ a
 	display: block;
     position: relative;
 	width: 200px;
-    background-color: purple;
+    background-color: #68C20E;
     padding: 21px 10px;
     text-align: center;
     color: #fff;
@@ -238,7 +245,7 @@ a
 	display: block;
     position: relative;
 	width: 200px;
-    background-color: ;
+    background-color: #417505;
     padding: 21px 10px;
     text-align: center;
     color: #fff;
@@ -358,8 +365,10 @@ a
 	{
 		display: flex;
 		flex-direction: row;
+		margin-top: 40px;
 
 	}
+
 	/* center the content the the container */
 	.products
 	{
@@ -392,7 +401,7 @@ a
 		margin-right: 20px;
 		flex: 0 1 200px;
 	}
-
+	/* Logo desktop sizing */
 	#traaLogo
 	{
 		display: block;
@@ -400,11 +409,12 @@ a
 		margin: 0 auto;
 	}
 
-	/* Reveal menu structure */
+	/* Desktop menu structure  */
 	.showmainNav
 	{	
 		display: block;
-		flex: 0 1 800px; /*flex 0 keeps nav from expanding too far and touching logo*/
+		margin-top: 40px;
+		flex: 0 1 600px; /*flex 0 keeps nav from expanding too far and touching logo*/
 		margin-left: auto;
 	}
 
@@ -413,10 +423,11 @@ a
 		display: inline-block;
 	}
 
-	/* menu title space and styling */
+	/* Desktop Menu title space and styling */
 	.showmainNav li a
 	{
-		color: #fff;
+		color: #000;
+		margin-left: 20px;
 		text-decoration: none;
 	}
 	
@@ -424,6 +435,7 @@ a
 	li:not(.nav-dropdown li) 
 	{
 		display: block;
+		color: #fff;
 		float: left;
 		padding: 10px;
 		position: relative;
@@ -605,7 +617,7 @@ a
 	/* Button hover structure */
 	.button:hover
 	{
-		background-color: Slateblue;
+		background-color: #417505;
 		margin: 0;
 	}
 
