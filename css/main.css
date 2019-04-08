@@ -619,7 +619,7 @@ a
 	
 	/******************************/
 	/* Project section structure */
-
+	
 	.hero
 	{
 		background: 
@@ -629,7 +629,6 @@ a
 	    ),
 	    url(../images/traa_hero_1.jpg) no-repeat center;
 	}
-
 
 	.projectsContainer
 	{	
@@ -748,17 +747,23 @@ a
 	}
 	
 	.fundingHero
-{
-	background:url(../images/vashishtha-jogi-66779-unsplash_funding_1.jpg) no-repeat center;
-	height: 450px;
-	margin-top: 40px;
-	margin-bottom: 30px;
-}
+	{
+		background:url(../images/vashishtha-jogi-66779-unsplash_funding_1.jpg) no-repeat center;
+		height: 450px;
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	
+	.shopHero
+	{
+		background:url(../images/traa_shop_1.jpg) no-repeat center;
+		height: 450px;
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
 
 
 	
-
-
 
 
 
