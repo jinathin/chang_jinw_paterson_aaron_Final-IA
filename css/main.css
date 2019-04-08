@@ -54,7 +54,8 @@ a
 	max-width: 1140px;
 }
 
-.box {
+.box 
+{
   background-color: SlateBlue;
   color: #fff;
   border-radius: 5px;
@@ -63,6 +64,7 @@ a
   margin: 10px;
 }
 
+/* Top navigation structure */
 .topInfo
 {
 	background-color: #417505;
@@ -70,6 +72,10 @@ a
 	margin-bottom: 0px;
 }
 
+.contactTop
+{
+	display: none;
+}
 
 .socialmediaTop
 {
@@ -84,6 +90,7 @@ a
 	justify-content: space-between;
 	margin-left: 20px;
 }
+
 
 /* logo at mobile */
 .logo
@@ -106,7 +113,6 @@ a
 	-webkit-transition: rotate(90deg);
 	transition: rotate(90deg);
 	transform: rotate(90deg);
-
 }
 
 #hamNav li a
@@ -159,9 +165,9 @@ a
 	display: block;
 
 }
-/* end of hamber toggle */
+/* End of hamburger toggle */
 
-/* hide the main nav in mobile */
+/* Hide the main nav in mobile */
 .showmainNav
 {
 	color: #fff;
@@ -189,6 +195,7 @@ a
 	border-radius: 50px;
 	margin: 0 auto;
 }
+
 /* subscribe button hover */
 #subsBut:hover
 {
@@ -281,6 +288,20 @@ a
 	.topInfo
 	{
 		margin-bottom: 18px;
+	}
+
+	.contactTop
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 300px;
+		height: 0px; 
+ 	}
+	
+	.contactTop p
+	{
+		color: #fff;
 	}
 	
 	/* Display content side by side */
