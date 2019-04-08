@@ -1,3 +1,7 @@
-# chang_jinw_paterson_aaron_FIP
+# This is the FIA TRAA site build for Jin and Aaron 
+Mobile to Desktop Thames River Anglers Association Website
 
-just random update on read me
+Worked on Mobile site for about page 
+ - creating overall build first
+ - then filling up inside the content 
+ - creating 
