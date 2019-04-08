@@ -63,10 +63,27 @@ a
   margin: 10px;
 }
 
-/*.hero, .column1, .column2, .column3, .column4, .column5, .column6
+.topInfo
 {
-	height: 400px;
-}*/
+	background-color: #417505;
+	height: 0px;
+	margin-bottom: 0px;
+}
+
+
+.socialmediaTop
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-bottom: 18px;
+}
+
+.socialMedia ul li{
+	display:  inline;
+	justify-content: space-between;
+	margin-left: 20px;
+}
 
 /* logo at mobile */
 .logo
@@ -260,6 +277,11 @@ a
 /************************************/
 /* At 641 pixels and above do this */
 @media screen and (min-width: 641px){
+
+	.topInfo
+	{
+		margin-bottom: 18px;
+	}
 	
 	/* Display content side by side */
 	#mainHeader
@@ -484,7 +506,8 @@ a
 
 	.subscribeCon
 	{
-
+		display: flex;
+		justify-content: center;
 		width: 600px;
 		position: relative;
 		top: -70px;
@@ -494,6 +517,7 @@ a
 		background-color: white;
 		box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
         0 5px 15px 0 rgba(0,0,0,0.08);
+
 	}
 	/* About section stucture */
 	
