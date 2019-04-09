@@ -583,6 +583,16 @@ a
 		padding: 20px;
 		font-family: 'Noticia Text', serif;
 		font-weight: 700;
+		letter-spacing: 0.03em;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.aboutTitle_1 p
+	{
+		font-family: 'Noticia Text', serif;
+		font-weight: 700;
 		font-size: 36px;
 		letter-spacing: 0.03em;
 		text-align: center;
@@ -592,7 +602,6 @@ a
 	.aboutTitle_2
 	{
 		width: 100%;
-		background-color: blue;
 		margin-bottom: 20px;
 		flex: 1 1 auto;
 		font-family: 'Noticia Text', serif;
@@ -637,12 +646,11 @@ a
 		width: 50%;
 	}
 
+
 	.aboutHeroimg
 	{
 	  	text-align: center;
-	  	margin: 10px;
 	}
-
 
 	.aboutPoint
 	{
@@ -662,7 +670,7 @@ a
 	{
 	 	margin-bottom: 20px;
 	 	line-height: 30px;
-	 	font-size: 25px;
+	 	font-size: 18px;
 	 	
 	}
 
@@ -687,7 +695,6 @@ a
 		padding-left: 20px;
 		padding-top: 45px;
 		padding-right: 5px;
-	
 		align-items: center;
 	}
 	
@@ -703,7 +710,6 @@ a
 		flex-direction: row;
 		justify-content: center;
 		width: 100%;
-		
 		position: relative;
 		z-index: -2;
 	}
