@@ -64,8 +64,9 @@ a
 	max-width: 1140px;
 }
 
-.box {
-  background-color: SlateBlue;
+.box 
+{
+  background-color: #417505;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -253,15 +254,17 @@ a
 .aboutTitle_1 p
 {
 	font-family: 'Noticia Text', serif;
-	font-size: 24px;
-	line-height: 28px;
 	font-weight: 700;
-
+	font-size: 24px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 20px;
+	line-height: 28px;
 }
 
 .aboutTitle_2
 {
-	width: 255px;
+	width: 300px;
 	margin: 0 auto;
 }
 
@@ -271,6 +274,9 @@ a
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 700;
+	padding: 20px;
+	text-align: center;
+	margin: 10px;
 
 }
 
@@ -278,6 +284,7 @@ a
 {
 	width: 300px;
 	margin: 0 auto;
+
 }
 
 .aboutTitle_3 p
@@ -286,7 +293,21 @@ a
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 700;
+	text-align: center;
+	margin: 10px;
 
+
+}
+
+
+/*this is the hero image section for about page*/
+.aboutHeroimg
+{
+	display: block;
+	flex-direction: row;
+  	text-align: center;
+
+  	margin: 10px;
 }
 
 /*bulletpoint section for the future*/
@@ -297,6 +318,10 @@ a
 {
 	font-size: 14px;
 	text-align: left;
+	border-radius: 5px;
+  	padding: 20px;
+  	text-align: left;
+ 	margin: 10px;
 
 }
 
@@ -309,10 +334,14 @@ a
 {
 	font-size: 14px;
 	text-align: left;
-
+	border-radius: 5px;
+	padding: 20px;
+	text-align: left;
+	margin: 10px;
+	letter-spacing: 1px;
 }
 
-.aboutPoint
+.aboutPoint p
 {
 	margin-bottom: 20px;
 }
@@ -333,11 +362,12 @@ a
 }
 */
 
-.products1
+.aboutProducts1
 {
-	
 	margin: 0 auto;
 	border-bottom: 1px solid black;
+	width: 300px;
+	margin-bottom: 50px;
 }
 
 
@@ -383,27 +413,6 @@ a
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*end of about profile section*/
 
 /* Contact section structure */
@@ -437,19 +446,14 @@ a
 		flex-direction: row;
 	}
 	/* center the content the the container */
-	.products
+
+	.Products
 	{
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 	}
 
-	.products1
-	{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
 
 	/* hide the hamburger at a bigger screen above 641px */
 		#hamNav
@@ -554,11 +558,35 @@ a
 
 /*about page start*/
 
+	.aboutProducts
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.aboutProducts1
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 auto;
+		border-bottom: 1px solid black;
+		margin-bottom: 70px;
+		width: 100%;
+	}
 
 	.aboutTitle_1
 	{
 		width: 500px;
-		background-color: red;
+		flex: 1 1 auto;
+		padding: 20px;
+		font-family: 'Noticia Text', serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		text-align: center;
+		margin-bottom: 20px;
 	}
 
 	.aboutTitle_2
@@ -566,6 +594,12 @@ a
 		width: 100%;
 		background-color: blue;
 		margin-bottom: 20px;
+		flex: 1 1 auto;
+		font-family: 'Noticia Text', serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		text-align: center;
 
 	}
 
@@ -582,14 +616,33 @@ a
 	.aboutTitle_3
 	{
 		width: 100%;
-		background-color: red;
-		text-align: left;
+		flex: 1 1 auto;
+		font-family: 'Noticia Text', serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		margin-bottom: 20px;
 	}
 	
 	.aboutTitle_3 p
 	{
 		font-size: 30px;
+		text-align: left;
 	}
+
+	.aboutText
+	{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.aboutHeroimg
+	{
+	  	text-align: center;
+	  	margin: 10px;
+	}
+
 
 	.aboutPoint
 	{
@@ -602,6 +655,7 @@ a
 		background-color: white;
 		color: black;
 		text-align: left;
+		flex: 1 1 auto;
 	}
 	
 	.aboutPoint p
@@ -643,6 +697,17 @@ a
 		margin-right: 30px;
 	}
 	
+	.aboutBg
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		
+		position: relative;
+		z-index: -2;
+	}
+
 	
 /*about page end*/
 /* Column structure */
@@ -685,8 +750,12 @@ a
 
 	.column6
 	{
-		background-color: purple;
+		/*background-color: purple;*/
 		width: 50%;
+		flex: 1 1 auto;
+		padding: 20px;
+		margin: 10px;
+		margin-bottom: 50px;
 	}
 
 	.column7
@@ -715,6 +784,7 @@ a
 		min-width: 40%;
 		color: #fff;
 		margin-right: 40px;
+
 	}
 
 	/* subscribe container */
