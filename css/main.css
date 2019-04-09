@@ -941,7 +941,7 @@ a
 	.subscribeCon
 	{
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		width: 600px;
 		position: relative;
 		top: -70px;
@@ -953,7 +953,31 @@ a
         0 5px 15px 0 rgba(0,0,0,0.08);
 
 	}
+
+	.subscribeCon h3
+	{
+		font-family: 'Source Sans Pro', Arial, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+
+	}
 	
+	.subscribeCon p
+	{
+		font-family: 'Source Sans Pro', Arial, sans-serif;
+		font-weight: 600;
+		font-size: 24px;
+
+	}
+
+	#borderLine
+	{
+		width: 273px;
+		border-right: 1px solid #000;
+	}
+
 	/* Contact section structure */
 	.contactForm
 	{
