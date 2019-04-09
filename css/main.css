@@ -410,7 +410,6 @@ a
 	margin-top: 50px;
 }
 
-
 .sectionQuote p
 {
 	padding: 30px;
@@ -430,7 +429,7 @@ a
 	justify-content: center;
 }
 
-#volunteerPerson
+.volunteerPerson
 {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	color: #000;
@@ -449,15 +448,19 @@ a
     0 5px 15px 0 rgba(0,0,0,0.08);	
 }
 
-
 .column6 p
 {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	color: #696969;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 20px;
 	margin-top: 20px;
 	margin-bottom: 50px;
+}
+
+.column8
+{
+	text-align: left;
 }
 
 /* Volunteer Section gapping */
@@ -474,7 +477,6 @@ a
     align-items: center;
 
 }
-
 .partnerCon .column7
 {
 	margin-bottom: 40px;
@@ -491,6 +493,70 @@ a
 	margin: 10px;
 	margin-top: 120px;
 }
+
+.footerService
+{
+	max-width: 357px;
+  	padding: 20px;
+    margin-bottom: 30px;
+	margin: 0 auto;
+}
+
+/* our mission start */
+.footerTitle
+{
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 0.03em;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.footerTitle p
+{
+	width: 225px;
+	text-align: left;
+}
+
+/* Our mission start */
+.footerTitle h4
+{
+	width: 260px;
+	font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 0.02em;
+}
+.footerTitle p
+{
+	width: 200px;
+	margin-top: 25px;
+	color: #fff;
+}
+
+.quickLinks
+{
+	width: 260px;
+	color: #fff;
+	border-right: 1px solid #fff;
+}
+
+.quickLinks p img
+{
+	margin-right: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.quickLinks a
+{
+	font-size: 16px;
+	color: #fff;
+}
+
+
 
 /*************************************************************************/
 /************* MEDIA QUERY START ****************************************/
@@ -558,6 +624,7 @@ a
 		margin-right: 20px;
 		flex: 0 1 200px;
 	}
+
 	/* Logo desktop sizing */
 	#traaLogo
 	{
@@ -583,7 +650,6 @@ a
 		display: inline-block;
 		
 	}
-
 	/* Desktop Menu title space and styling */
 	.showmainNav li a
 	{
@@ -740,6 +806,12 @@ a
 		width: 50%;
 
 	}
+
+	.column8
+	{	
+	    display: flex;
+	    flex-direction: column;
+	}
 	
 	/******************************/
 	/* Project section structure */
@@ -846,13 +918,11 @@ a
 		margin-top: 40px;
 	}
 
-	/* Funding Desktop */
+	/* Funding structure section */
 	.fundingCon 
-	{
-
+	{	
 		margin-top: 30px;
 		margin-bottom: 30px;
-
 	}
 
 	.fundingCon h3
@@ -907,8 +977,7 @@ a
 		margin-right: 0;
 	 }
 
-	/* subscribe button hover */
-
+	/* Subscribe button hover */
 	 #subsBut:hover
 	 {
 		background-color: #417505;
@@ -951,7 +1020,6 @@ a
 		background-color: white;
 		box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
         0 5px 15px 0 rgba(0,0,0,0.08);
-
 	}
 
 	.subscribeCon h3
@@ -987,7 +1055,19 @@ a
 		margin: 0 auto;
 		
 	}
+	/* Desktop footer structure */
+	.footerService 
+	{
+		max-width: 1024px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	
+	.footerCopy p
+	{
+		max-width: 220px;
 
-
+	}
+	
 	
 }
