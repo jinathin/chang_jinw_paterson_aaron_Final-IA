@@ -47,6 +47,23 @@ a
   transition:all .1s linear 0s;
 }
 
+label
+{
+    color: #c2c2c2;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+}
+
+/* Universal styling for all articles */
+article
+{
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	font-weight: 400;
+	font-size: .873rem;
+	line-height: 28px;
+}
+
 /* General section title universal structure for mobile */
 .sectionTitle
 {
@@ -228,7 +245,7 @@ a
 	display: none;
 }
 
-/* Universal button styling */
+/********* Universal button styling ********/
 .button
 {
 
@@ -256,7 +273,287 @@ a
     border-radius: 50px;
     margin: 0 auto;
 }
+/******************************************/
+/* Modal buttons section */
 
+{
+    color: #c2c2c2;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+}
+
+.container 
+{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.box 
+{
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+}
+
+/*.button 
+{
+  background-color: blue;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 10px 28px;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+  
+}
+
+.button:hover
+{
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+*/
+
+
+
+/* MODAL STARTS HERE */
+/* justify content horizontally and verically with align-items */
+/* display none will hide it then you reveal it Javascript */
+.card-container 
+{
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card 
+{
+	width: 230px;
+	height: 300px;
+	border: 1px solid darkgray;
+	border-radius: 3px;
+	margin: 10px;
+}
+
+.bgModal
+{ 
+	top: 0;
+	display: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+
+}
+
+/*    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 10px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+*/
+
+#instructionCon
+{ 
+  line-height: 24px;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin: 0 auto;
+}
+
+#intro
+{
+  margin-bottom: 40px;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 40px;
+}
+
+/* Estbalishing the border in the middle */
+#contactArea
+{
+  width: 469px;
+  border-right: solid 1px #ccc;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #000;
+
+}
+
+#contactText
+{
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+/* Small gray text*/
+#smallTitle
+{
+  font-size: 14px;
+  color: #c2c2c2;
+  margin-bottom: 5px;
+}
+
+/* Donate text */
+#contactsubText
+{
+  font-size: 12px;
+  color: #c2c2c2;
+  margin-bottom: 10px;
+}
+
+/* Donate Button styling */
+#donateCon
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+#donateCon:second-child
+{
+  margin-left: 10px;
+}
+
+#donateCon a
+{
+  text-decoration: none;
+}
+
+/* Button sytling */
+.donateBut
+{
+  width: 60px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #68C20E;
+}
+
+.donateBut:hover
+{
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #417505;
+}
+
+input, textarea
+{
+  display: block;
+  padding: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 280px;
+  border: 1px solid #999;
+  border-style: none;
+  background-color: #ececec;
+}
+
+#comments
+{
+  width: 280px;
+  height: 50px;
+}
+
+.submit
+{
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  width: 200px;
+  padding: 21px 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  background-color: #68C20E;
+  margin: 0 auto;
+}
+
+.submit:hover
+{
+  background-color: #417505;
+}
+
+/* The '+' positioned to its closest parent which is the modal */
+.modalContent
+{ 
+	top: 100%;
+    bottom: 100%;
+    position: relative;
+    width: 320px;
+    height: 790px;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* Universal button styling */
+.button
+{
+  display: block;
+  position: relative;
+  width: 200px;
+  background-color: ;
+  padding: 21px 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+/* Universal button styling */
+.button:hover
+{
+  display: block;
+  position: relative;
+  width: 200px;
+  background-color: ;
+  padding: 21px 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.close
+{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: #000;
+}
+
+
+/*****************************************/
 .hero
 {
 	height: 450px;
@@ -556,8 +853,33 @@ a
 	color: #fff;
 }
 
+.projectfeature-title h2
+{
+	font-family: 'Noticia Text', Georgia, serif;
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
 
+/* Mobile section structure */
+.projectfeature-title p
+{
+	text-align: center;
+	margin-bottom: 40px;
+	margin: 0 auto;
+}
 
+.italicStyle
+{
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+/**************************************************************************/
 /*************************************************************************/
 /************* MEDIA QUERY START ****************************************/
 /***********************************************************************/
@@ -789,7 +1111,6 @@ a
 
 	.column5
 	{
-		background-color: purple;
 		width: 100%;
 	}
 
@@ -829,7 +1150,6 @@ a
 	{	
 		display: flex;
 		flex-direction: column;
-
 	}
 	
 	.projectsLibrary
@@ -838,10 +1158,9 @@ a
 		flex-direction: row;
 
 	}
-	
+	/* Desktop section structure */
 	.projectImage
 	{
-		background-color: purple;
 		min-width: 40%;
 		color: #fff;
 		margin-right: 40px;
@@ -884,7 +1203,13 @@ a
 		max-width: 750px;
 		text-align: center;
 		padding: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
+		margin: 0 auto;
+	}
+
+	.projectContainter
+	{
+		margin-top: 40px;
 	}
 
 	/* Black by default */
@@ -1066,8 +1391,107 @@ a
 	.footerCopy p
 	{
 		max-width: 220px;
+	}
+/********************************/
+/* Modal media query structure */
 
+	.card-container 
+	{
+		max-width: 800px;
+		margin: 50px auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: red;
 	}
 	
+	#contactArea
+	{
+		width: 469px;
+		border-right: solid 1px #ccc;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		color: #000;
+	}
+
 	
+	.card 
+	{
+		width: 230px;
+		height: 300px;
+		border: 1px solid darkgray;
+		border-radius: 3px;
+		margin: 10px;
+	}
+
+	.bgModal
+	{ 
+		top: 0;
+		display: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		position: absolute;
+
+	}
+
+  	.modalContent 
+  	{
+		top: 100%;
+	    bottom: 100%;
+	    position: relative;
+	    max-width: 320px;
+	    height: 790px;
+	    background-color: #fff;
+	    border-radius: 4px;
+	    z-index: 1;
+ 	 }
+
+
+  #comments
+	{
+		max-width: 320px;
+		height: 50px;
+	}
+
+  .close
+	{
+		position: absolute;
+		top: 0;
+		right: 14px;
+		font-size: 42px;
+		transform: rotate(45deg);
+		cursor: pointer;
+		color: #000;
+	}
+
+	.projectfeature-title h2
+	{
+		font-family: 'Noticia Text', Georgia, serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	/* Mobile section structure */
+	.projectfeature-title p
+	{		
+		text-align: left;
+		margin-bottom: 40px;
+	}
+
+	.italicStyle
+	{
+		font-family: 'Source Sans Pro', Arial, sans-serif;
+		font-weight: 600;
+		font-size: 12px;
+		font-style: italic;
+	}
+
+
 }

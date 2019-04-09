@@ -7,17 +7,40 @@
 <link rel="shortcut icon" type="image/png" href="images/TRAA_logoflavicon.png">
 <title>Thames River Anglers Association</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,700" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<h1 class="hidden">Thames River Anglers Association</h1>
-	<!--  -->
-	<section class=" box">
+	<!-- Mobile Navigation Menu -->
+	<section class="box">
+		<h2 class="hidden">Top Navigation</h2>
 		<!-- Inner max width for the content -->
-		<div class="siteContainer"><h2>Top Contacts</h2></div>
+		<div class="siteContainer topInfo">
+			<!-- Top contact info -->
+				<div class="contactTop">
+					<img src="images/telephone_icon.svg" alt="telephone_icon" width="20" height="20" title="Telephone Icon">
+					<p>1800 123 - 4678</p>
+					<img src="images/mail_icon.svg" alt="finder_email" width="20" height="20" title="Email Icon">
+					<p>@anglersmail.com</p>
+			</div>
+			<div class="socialmediaTop">
+			        <nav class="socialMedia">
+			            <h2 class="hidden">Social Media Navigation</h2>			                        
+			                <ul> 
+			                	<li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook_White.svg" alt="Facebook Social Media Link"  width="20" height="20"></a></li>
+			                    <li><a href="https://www.twitter.com" target="_blank"><img src="images/twitter_White.svg" alt="Twitter Social Media Link" width="20" height="20"></a></li>
+			                    <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube_White.svg" alt="YouTube Social Media Link" width="20" height="20"></a></li>
+			                    <li><a href="https://www.instagram_White.com" target="_blank"><img src="images/instagram_White.svg" alt="Instagram Social Media Link" width="20" height="20"></a></li>
+			                    </ul>
+			        </nav>
+			</div>
+		</div>
+		<!-- Hamburger Menu -->
 		<nav id="hamNav">
-			<h2 class="hidden">Hamburger Navigation</h2>
+			<h2 class="hidden">Main Hamburger Navigation</h2>
 			<button id="button"></button>
 			<div id="burgerCon">
 				<ul id="burgerMenu">
@@ -38,13 +61,17 @@
 				</ul>
 			</div>
 		</nav>
-	</section>
+	</section> 
 	<section class="siteContainer">
+		<h2 class="hidden">Main Navigation Desktop</h2>
 		<header id="mainHeader">
-			<div class="box logo"><h2>Logo</h2></div>
-				<nav class=" box showmainNav">
+			<!-- Thames River Anglers Logo -->
+			<div class="logo">
+				<img src="images/traa_logo-MASTER.svg" alt="traa Logo" id="traaLogo">
+			</div>
+				<nav class="showmainNav">
 	                <ul>
-	                  <li><a href="index.html">Home</a>
+	                  	<li><a href="index.html">Home</a>
 							<ul class="nav-dropdown">
 				            	<li><a href="#!">Funding</a></li>
 				            	<li><a href="#!">Newsfeed</a></li>
@@ -62,40 +89,69 @@
 	            </nav>
 		</header>
 	</section>
-	<!-- Full Width -->
-	<section class="siteContainer">
-		<!-- Title for Project Section -->
-		<div class="box"><h2>Title Here</h2>
-		<h3>"Hands-on Environmentalism" is what we do ...</h3>
-		<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aut pariatur quidem. Fugit ullam voluptates enim a, voluptate libero dolore ut explicabo porro odio saepe dolor pariatur, non repellat debitis!</article>
-	</div>
+	<!-- Full Width --> 
+	<section class="siteContainer"> 
+		<!-- Title for Project Section --> 
+		<div class="sectionTitle"><h2>Projects</h2>
+			<p class="projectsInfo">
+				<span id="highLight">"Hands-on Environmentalism"</span>
+				is what we do ... This is what sets the TRAA apart from
+				other clubs and organizations. You'll find us right in the water clearing obstructions
+				from streams, measuring returning
+				salmonids & taking scale samples for DNA
+				analysis, education through trout hatchery
+				tours & stream walks, being a voice for the
+				Thames River watershed & its inhabitants
+				and the list goes on.
+			</p>
+		</div>
 	<!--  Project Library section -->
 	<div class="projectContainer">
 		<!-- Section title -->
 		<div class="projectsLibrary">
 			<div class="projectImage">
-				<picture><h2>Switch picture here</h2>
-				</picture>
+				<div>
+					<img src="images/salmonidCatcher_500.jpg" width="500" height="350" alt="trout_hachery image">
+				</div>
 			</div>
+			<!--  Push the title to th right  -->
 			<div>
-				<div class="box"><h2>Salmonid Monitoring Program</h2></div>
+				<div class="projectfeature-title">
+					<h2>Salmonid Monitoring Program</h2>
+					<p>
+						<span class="italicStyle">Spring 2013 will be our fourth year of this 5-year project.</span><br>
+						Here's an overview of what happened over a few weekends in the 
+						Spring of 2012 when TRAA members and personnel from the Upper 
+						Thames River Conservation Authority (UTRCA) waded in for Year 3 
+						of our 5-year Salmonid Tagging and Monitoring Program.
+					</p>
+				</div>
 				<a href="#" class="button box">LEARN MORE</a>
 			</div>
 		</div>
 		<!-- Section title -->
 		<div class="projectsLibrary">
 				<div class="projectImage">
-					<picture><h2>Switch picture here</h2>
-					</picture>
+					<div>
+						<img src="images/trout_hatchery_opt.jpg" width="500" height="350" alt="trout_hachery image">
+					</div>
 				</div>
+				<!-- Push the title to the right  -->
 				<div>
-					<div class="box"><h2>TRAA Trout Hatchery</h2></div>
+					<div class="projectfeature-title">
+						<h2>TRAA Trout Hatchery</h2>
+					
+						<p>
+							<span class="italicStyle">Rearing both brown and rainbow trout.</span>
+							<br>The TRAA first began rearing rainbow trout in an outdoor upwelling incubation box back in 1986. Since then we've successfully taken on both brown trout and brook trout eggs.
+						</p>
+					</div>
 					<a href="#" class="button box">LEARN MORE</a>
 				</div>
 		</div>
 	</div>
 	</section>
-		<!-- Footer Start -->
+<!-- Footer Start -->
 	<footer class="footerCon">
 		<!-- Subscribe infomation and button -->
 		<section class="subscribeCon">
@@ -115,7 +171,7 @@
 		<!-- Footer section structure -->
             <section class="footerService products">
             	<h2 class="hidden">Footer</h2>
-				<div class="footerService column8">
+				<div class="footerCopy footerService column8">
 					<h2 class="footerTitle">Our Mission</h2>
 					<p>
 						Dedication Today for Tomorrow
@@ -138,7 +194,7 @@
 							<p><img class="iconNudge" src="images/circledbordertriangleright_183331.svg" width="15" height="15" alt="circlebordertriangle"><a href="#">MEMBERSHIP</a></p>
 		       		</div>
 				</div>
-				<div class="footerService column8">
+				<div class=" footerCopy footerService column8">
 <!-- 					<div class="locationIcon"><img src="images/locationIcon_traa.png" width="30" height="45"></div>
  -->					<h2 class="footerTitle">Contact Us</h2>
 					<p>

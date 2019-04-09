@@ -64,6 +64,63 @@
 			</div>
 		</nav>
 	</section>
+	<!---------------- Modal Content does here ---------------->
+				<!-- Modal structure -->	
+				<div class="bgModal">
+					<!-- Card structure  -->
+					<div class="modalContent box">
+						<!-- Close button -->
+						<div class="close">+</div>
+							<section id="contactArea instructionCon">
+								<!--Start contactArea-->
+					            <h2 class="hidden">Donate form</h2>
+					            <p id="contactText"><span id="smallTitle">You are donating to:</span><br>Thames River Anglers Association</p> 
+					            <p id="contactsubText">How much would you like to donate?</p>
+					            <!-- Donate pricing button -->
+					            <div id="donateCon">
+					            	<a href="#" class="donateBut">$5</a>
+					            	<a href="#" class="donateBut">$10</a>
+					            	<a href="#" class="donateBut">$20</a>
+					            </div>
+					            <p id="contactsubText">Would you like to make regular donations?</p>
+								<!--  Input dropdown-list -->
+					            <form action="form.php" method="post">
+									  <select name="donatePeriod">
+										    <option value="time">A one time</option>
+										    <option value="weekly">Weekly</option>
+										    <option value="monthly">Monthly</option>
+										    <option value="annually">Annually</option>
+									  </select>
+								</form>
+					            
+					            <!-- Form structure here -->
+					            <form id="contactForm" action="form.php" method="post">
+					                    <label for="name">Name: (required)</label>
+					                    <input type="text" required id="firstname" name="fullName" size="30" placeholder="Enter your First name">
+
+					                     <label for="Last name">Last name: (will not be published)</label>
+					                    <input type="text" required id="lastname" size="30" placeholder="Enter your Last name">
+					                    
+					                    <label for="email">Email: (will not be published)</label>
+					                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+
+					                     <label for="address">Address: (will not be published)</label>
+					                    <input type="email" required id="email" size="30" placeholder="Enter your Address">
+					                    
+					                    <label for="phone">Phone: (required)</label>
+					                    <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
+
+					                    <label for="comments">Comments:</label>
+		                        		<textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+
+		                        		<input class="submit" type="submit" value="Submit">
+		               			 </form>
+		        			</section>
+		        		<!--end contactArea-->  
+					</div>
+					<!----------------- End Modal ---------------->
+				</div>
+			
 	<!-- Desktop Navigation Menu -->
 	<section class="siteContainer">
 		<h2 class="hidden">Main Navigation Desktop</h2>
@@ -168,12 +225,12 @@
 						<p class="subtitleCopy">
 							Efforts are underway to get the funding we need to continue many of the TRAA's most vital projects:
 						</p>
-					<a href="#" class="button box">LEARN MORE</a>
+					<a href="#" id="donateBut"class="button box">DONATE</a>
 				</div>
 			</div>		
 		</section>
 		<div class="sectionQuote">
-				<p>“For the enhancement, protection and promotion of a viable, multi-species fishery within the Thames River watershed."</p>
+				<p>“For the enhancement, protection and promotion of a viable, multi-species fishery within the Thames River watershed.” </p>
 		</div>
 		<!--  Shop Section-->
 		<section class="products shopHero shopCon">
