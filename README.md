@@ -16,4 +16,12 @@ Mobile to Desktop Thames River Anglers Association Website
 *Minor issue to be fixed*
  - css lines has to be corrected when merging to master
  - ~~background image has to be fixed to fit better in desktop full preview~~
+
+###### Contact page 
+
+
+ contact page feats these elements
+ - information about google map (location of the TRAA)
+ - Contact form section to fill up their information to create it 
+ 
  
