@@ -328,7 +328,7 @@ article
 	background-color: rgba(0, 0, 0, 0.7);
 	position: absolute;
 	top: 0;
-
+	z-index: 1;
 }
 
 #instructionCon
@@ -842,12 +842,67 @@ input, textarea
 }
 
 /* Target the gray explainer text */
-	#labelGray
+#labelGray
+{
+	display: block;
+	text-align: left;
+	color:#c2c2c2;
+}
+
+/* Membership card */
+.membershipCon
+{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+}
+
+.membership_card_1
+{
+	background:url(../images/membership_card.png) no-repeat center;
+	height: 407px;
+	margin-bottom: 20px;
+}
+
+.membership_card_2
+{
+	background:url(../images/membership_card.png) no-repeat center;
+	height: 407px;
+	margin-bottom: 20px;
+}
+
+.membershipSubtext
+{
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.membershipTitle
+{
+	font-family: 'Noticia Text', Georgia, serif;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	margin-top: 70px;
+}
+
+#membershipPrice
+{
+	padding: 50px;
+	font-size: 60px;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	text-align: center;	
+}
+
+.membership_card_1
 	{
-		display: block;
-		text-align: left;
-		color:#c2c2c2;
-	} 
+		margin-bottom: 40px;
+	}
+
+
 
 /**************************************************************************/
 /*************************************************************************/
@@ -1414,6 +1469,7 @@ input, textarea
 		background-color: rgba(0, 0, 0, 0.7);
 		position: absolute;
 		top: 0;
+		z-index: 1;
 
 	}
 
@@ -1471,6 +1527,23 @@ input, textarea
 		font-size: 12px;
 		font-style: italic;
 	}
+
+	.membershipCon
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-around;
+	}
+
+	.membershipSubtext
+	{
+		max-width: 700px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+
 
 
 }
