@@ -49,8 +49,6 @@ a
 
 label
 {
-    color: #c2c2c2;
-    text-align: left;
     font-size: 12px;
     letter-spacing: 0.03em;
 }
@@ -202,6 +200,7 @@ article
 {
 	display: block;
 }
+
 /* End of hamburger toggle */
 
 /* Hide the main nav in mobile */
@@ -273,6 +272,7 @@ article
     border-radius: 50px;
     margin: 0 auto;
 }
+
 /******************************************/
 /* Modal buttons section */
 
@@ -295,29 +295,6 @@ article
   padding: 20px;
   margin: 10px;
 }
-
-/*.button 
-{
-  background-color: blue;
-  border: 2px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  padding: 10px 28px;
-  color: white;
-  margin-top: 10px;
-  display: inline-block;
-  
-}
-
-.button:hover
-{
-    background-color: white;
-    color: blue;
-    border: 2px solid blue;
-}
-*/
-
-
 
 /* MODAL STARTS HERE */
 /* justify content horizontally and verically with align-items */
@@ -342,8 +319,7 @@ article
 
 .bgModal
 { 
-	top: 0;
-	display: none;
+	visibility: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -351,24 +327,9 @@ article
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 	position: absolute;
+	top: 0;
 
 }
-
-/*    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    padding: 10px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin: 0 auto;
-*/
 
 #instructionCon
 { 
@@ -853,6 +814,7 @@ input, textarea
 	color: #fff;
 }
 
+/* Mobile section structure */
 .projectfeature-title h2
 {
 	font-family: 'Noticia Text', Georgia, serif;
@@ -864,12 +826,12 @@ input, textarea
 	margin-bottom: 20px;
 }
 
-/* Mobile section structure */
+
 .projectfeature-title p
 {
 	text-align: center;
+	margin: 0 auto;	
 	margin-bottom: 40px;
-	margin: 0 auto;
 }
 
 .italicStyle
@@ -878,6 +840,14 @@ input, textarea
 	font-weight: 400;
 	font-size: 14px;
 }
+
+/* Target the gray explainer text */
+	#labelGray
+	{
+		display: block;
+		text-align: left;
+		color:#c2c2c2;
+	} 
 
 /**************************************************************************/
 /*************************************************************************/
@@ -1380,6 +1350,15 @@ input, textarea
 		margin: 0 auto;
 		
 	}
+
+	/* Target the gray explainer text */
+	#labelGray
+	{
+		text-align: left;
+		color:#c2c2c2;
+		margin-right: 0;
+	} 
+
 	/* Desktop footer structure */
 	.footerService 
 	{
@@ -1414,7 +1393,6 @@ input, textarea
 		color: #000;
 	}
 
-	
 	.card 
 	{
 		width: 230px;
@@ -1424,10 +1402,10 @@ input, textarea
 		margin: 10px;
 	}
 
+	/* Desktop Modal */
 	.bgModal
 	{ 
-		top: 0;
-		display: none;
+		visibility: hidden;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1435,6 +1413,7 @@ input, textarea
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.7);
 		position: absolute;
+		top: 0;
 
 	}
 
@@ -1478,7 +1457,7 @@ input, textarea
 		margin-bottom: 20px;
 	}
 
-	/* Mobile section structure */
+	/* Desktop section structure */
 	.projectfeature-title p
 	{		
 		text-align: left;
