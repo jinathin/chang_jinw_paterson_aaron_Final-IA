@@ -15,5 +15,5 @@ Mobile to Desktop Thames River Anglers Association Website
 
 *Minor issue to be fixed*
  - css lines has to be corrected when merging to master
- - background image has to be fixed to fit better in desktop full precview 
+ - ~~background image has to be fixed to fit better in desktop full preview~~
  
