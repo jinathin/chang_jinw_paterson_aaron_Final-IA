@@ -529,7 +529,7 @@ article
    	letter-spacing: 0.03em;
 }
 
-#contactText 
+#contactINFO 
 {
 	/*flex-direction: column;*/
 	margin: 50px;
@@ -540,7 +540,7 @@ article
   	position: relative;
 }
 
-#contactText h3
+#contactINFO h3
 {
 	font-weight: 600;
 	padding-top: 30px;
@@ -550,7 +550,7 @@ article
 	font-size: 18px;
 }
 
-#contactText p
+#contactINFO p
 {
 	width: 75%;
 	margin: 0 auto;
@@ -1980,7 +1980,7 @@ input, textarea
 	}
 
 
-	#contactText 
+	#contactINFO 
 	{
 		/*background-color: #696969;*/
 	  	font-size: 18px;
@@ -1991,7 +1991,7 @@ input, textarea
 
 	}
 
-	#contactText h3
+	#contactINFO h3
 	{
 		text-align: left;
 		display: block;
@@ -1999,7 +1999,7 @@ input, textarea
 		
 	}
 
-	#contactText p
+	#contactINFO p
 	{
 		width: 270px;
 		font-size: 18px;
@@ -2039,20 +2039,6 @@ input, textarea
 		text-align: left;
 	}
 
-	input, textarea
-	{
-	  font-size: 18px;
-	  margin-top: 20px;
-	  margin-bottom: 20px;
-	  padding: 10px;
-	  height: 10px;
-	  background-color: #efefef;
-	  display: block;
-	  /*border: 0.5px solid black;*/
-	  color: #333;
-	  font-family: 'Source Sans Pro', sans-serif;
-	}
-	
 	#contactLable 
 	{
 		font-size: 14px;
