@@ -200,7 +200,6 @@ article
 {
 	display: block;
 }
-
 /* End of hamburger toggle */
 
 /* Hide the main nav in mobile */
@@ -296,6 +295,355 @@ article
   margin: 10px;
 }
 
+/* About section structure */
+.aboutTitle_1
+{
+	width: 255px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.aboutTitle_1 p
+{
+	font-family: 'Noticia Text', serif;
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 20px;
+	line-height: 28px;
+}
+
+.aboutTitle_2
+{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.aboutTitle_2 p
+{
+	font-family: 'Noticia Text', serif;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	padding: 20px;
+	text-align: center;
+	margin: 10px;
+
+}
+
+.aboutTitle_3 
+{
+	width: 300px;
+	margin: 0 auto;
+
+}
+
+.aboutTitle_3 p
+{
+	font-family: 'Noticia Text', serif;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	text-align: center;
+	margin: 10px;
+
+
+}
+
+
+/*this is the hero image section for about page*/
+.aboutHeroimg
+{
+	display: block;
+	flex-direction: row;
+  	text-align: center;
+
+  	margin: 10px;
+}
+
+
+/*this is the section for the aboutText*/
+.aboutText
+{
+	font-size: 14px;
+	text-align: left;
+	border-radius: 5px;
+  	padding: 20px;
+  	text-align: left;
+ 	margin: 10px;
+
+}
+
+.aboutText p
+{
+	margin-bottom: 20px;
+}
+
+.aboutPoint
+{
+	font-size: 14px;
+	text-align: left;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: left;
+	margin: 10px;
+	letter-spacing: 1px;
+}
+
+.aboutPoint p
+{
+	margin-bottom: 20px;
+}
+
+
+/*end of the aboutText*/
+
+/*start of about profile section*/
+
+/*#profileconUpper
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1120px;
+	height: 400px;
+	margin-top: 50px;
+}
+*/
+
+.aboutProducts1
+{
+	margin: 0 auto;
+	border-bottom: 1px solid black;
+	width: 300px;
+	margin-bottom: 50px;
+}
+
+
+.aboutColumn
+{
+	text-align: center;
+	margin-bottom: 55px;	
+	border-radius: 4px;
+}
+
+.aboutColumn h3 
+{
+   margin-top: 80px;
+   font-size: 24px;
+   line-height: 28px;
+   font-weight: 300;
+}
+
+.aboutColumn p
+{
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	line-height: 20px;
+}
+
+.profileImageabout
+{
+	width: 120px;
+	height: 120px;
+	position: relative;
+	top: 40px;
+	border-radius: 100px;
+	margin: 0 auto;
+
+}
+
+.profileImageabout img
+{
+	border-radius: 100px;
+}
+
+.aboutBg
+{
+	
+	justify-content: center;
+	position: relative;
+	z-index: -2;
+	margin-top: 150px;
+	margin-bottom: -130px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+
+/*end of about profile section*/
+
+
+/* Contact section structure */
+
+.contactProducts p
+{
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#googleMap
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/*height: 600px;*/
+	overflow:hidden;
+    padding-bottom: 100%;
+    position:relative;
+    height: 0;
+	z-index: -1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#googleMap iframe
+{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+ 	border-radius: 5px;
+}
+
+
+#contactForm
+{
+	display: block;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    bottom: 50px;
+   /*	box-shadow: 10px 10px 5px #dcdcdc;*/
+   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   	margin-left: 10px;
+   	margin-right: 10px;
+   	margin-top: -15px;
+   	padding-bottom: 10px;
+   	letter-spacing: 0.03em;
+}
+
+#contactINFO 
+{
+	/*flex-direction: column;*/
+	margin: 50px;
+  	font-size: 18px;
+  	margin-bottom: 30px;
+  	padding-top: 20px;
+  	padding: 10px;
+  	position: relative;
+}
+
+#contactINFO h3
+{
+	font-weight: 600;
+	padding-top: 30px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+#contactINFO p
+{
+	width: 75%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.contactLable
+{
+	display: flex;
+	/*background-color: #696969;*/
+	height: 736px;
+	margin: 50px;
+	justify-content: center;
+	font-size: 18px;
+	position: relative;
+}
+
+.contactLable p
+{
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+#contactUi
+{
+	margin-top: 30px;
+}
+
+
+.contactLable input, textarea
+{
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 10px;
+  background-color: #efefef;
+  display: block;
+  border-style: none;
+  color: black;
+
+}
+
+#formTitle
+{
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	column-rule: red;
+}
+
+#messages
+{
+  width: 300px;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+#submit
+{
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 250px;
+	height: 45px;
+	padding: 15px;
+	text-align: center;
+	margin-top: -35px;
+	border-radius: 25px;
+	color: #fff;
+	background-color: #68C20E;
+	-webkit-transition: color 0.4s ease-out;
+  	-moz-transition: color 0.4s ease-out;
+  	-o-transition: color 0.4s ease-out;
+  	transition: color 0.4s ease-out;
+	
+
+}
+
+/*end of the contact page*/
+
+/*section for aaron starts*/
 /* MODAL STARTS HERE */
 /* justify content horizontally and verically with align-items */
 /* display none will hide it then you reveal it Javascript */
@@ -739,8 +1087,10 @@ input, textarea
 {
 	margin-bottom: 40px;
 }
+/*this is the section for aaron*/
 
 /* Mobile Footer */
+
 .footerCon
 {
 	background-color:  #254500;
@@ -813,6 +1163,8 @@ input, textarea
 	font-size: 16px;
 	color: #fff;
 }
+
+
 
 /* Mobile section structure */
 .projectfeature-title h2
@@ -902,15 +1254,12 @@ input, textarea
 		margin-bottom: 40px;
 	}
 
-
-
-/**************************************************************************/
-/*************************************************************************/
-/************* MEDIA QUERY START ****************************************/
-/***********************************************************************/
+/******** MEDIA QUERY START **********/
+/************************************/
 /* At 641 pixels and above do this */
 @media screen and (min-width: 641px){
 
+	/* Display content side by side */
 	.topInfo
 	{
 		margin-bottom: 18px;
@@ -929,6 +1278,11 @@ input, textarea
 	{
 		color: #fff;
 	}
+
+	/*start of aaron's section*/
+	
+	/*end of arrons section*/
+
 	
 	/* Display content side by side */
 	#mainHeader
@@ -1084,6 +1438,8 @@ input, textarea
 		text-align: center;
 		margin-bottom: 20px;
 	}
+
+
 
 	.sectionQuote p
 	{
@@ -1427,6 +1783,337 @@ input, textarea
 		max-width: 220px;
 	}
 /********************************/
+
+
+/*about page start*/
+
+	.aboutProducts
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.aboutProducts1
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 auto;
+		border-bottom: 1px solid black;
+		margin-bottom: 70px;
+		width: 100%;
+	}
+
+	.aboutTitle_1
+	{
+		width: 500px;
+		flex: 1 1 auto;
+		padding: 20px;
+		font-family: 'Noticia Text', serif;
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.aboutTitle_1 p
+	{
+		font-family: 'Noticia Text', serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.aboutTitle_2
+	{
+		width: 100%;
+		margin-bottom: 20px;
+		flex: 1 1 auto;
+		font-family: 'Noticia Text', serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		text-align: center;
+
+	}
+
+	.aboutTitle_2 p
+	{
+		font-size: 36px;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 50px; 
+		line-height: 55px;
+	}
+
+	.aboutTitle_3
+	{
+		width: 100%;
+		flex: 1 1 auto;
+		font-family: 'Noticia Text', serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		margin-bottom: 20px;
+	}
+	
+	.aboutTitle_3 p
+	{
+		font-size: 30px;
+		text-align: left;
+	}
+
+	.aboutText
+	{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+
+	.aboutHeroimg
+	{
+	  	text-align: center;
+	}
+
+	.aboutPoint
+	{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 120px;	
+		background-color: white;
+		color: black;
+		text-align: left;
+		flex: 1 1 auto;
+	}
+	
+	.aboutPoint p
+	{
+	 	margin-bottom: 20px;
+	 	line-height: 30px;
+	 	font-size: 18px;
+	 	
+	}
+
+	.bulletpointLeft
+	{
+		width: 100%;
+		border-right: 1px solid #282828;
+		align-items: center;
+		padding-top: 50px;
+	}
+	
+	.bulletpointLeft p
+	{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.bulletpointRight
+	{
+		width: 100%;
+		/*border-left: 1px solid #282828;*/
+		padding-left: 20px;
+		padding-top: 45px;
+		padding-right: 5px;
+		align-items: center;
+	}
+	
+	.bulletpointRight p
+	{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	
+	.aboutBg
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		position: relative;
+		z-index: -2;
+		margin-bottom: -130px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.aboutColumn
+	{
+		/*background-color: purple;*/
+		width: 50%;
+		flex: 1 1 auto;
+		padding: 20px;
+		margin: 10px;
+		margin-bottom: 50px;
+	}
+/*about page end*/
+
+/*start of contact page*/
+	
+    #googleMap
+    {
+    	padding-bottom:56.25%;
+    }
+
+	#contactForm
+	{
+		display: flex;
+	    flex-direction: row;
+	    width: 910px;
+	    margin: 0 auto;
+	    background-color: white;
+	    position: relative;
+	    justify-content: space-evenly; 
+	   	bottom: 50px;
+	   	margin-bottom: -300px;
+	   /*	box-shadow: 10px 10px 5px #dcdcdc;*/
+	   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+
+	#contactINFO 
+	{
+		/*background-color: #696969;*/
+	  	font-size: 18px;
+	  	margin-bottom: 30px;
+	  	font-family: 'Source Sans Pro', sans-serif;
+	  	padding-top: 20px;
+	  	margin-top: 24px;
+
+	}
+
+	#contactINFO h3
+	{
+		text-align: left;
+		display: block;
+		font-size: 18px;
+		
+	}
+
+	#contactINFO p
+	{
+		width: 270px;
+		font-size: 18px;
+	}
+	
+	.vl 
+	{
+		border-left: 1px solid black;
+	  	height: 700px;
+	 	position: absolute;
+	 	left: 50%;
+	  	margin-left: -70px;
+	  	margin-top: 50px;
+	  	margin-right: 20px;
+
+	}
+
+	.contactLable
+	{
+		display: flex;
+		/*background-color: #696969;*/
+		width: 428px;
+		height: 736px;
+		margin: 10px;
+		justify-content: center;
+		font-size: 18px;
+	}
+
+	#contactUi
+	{
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	#contactUi p
+	{
+		text-align: left;
+	}
+
+	#contactLable 
+	{
+		font-size: 14px;
+	}
+
+	#messages
+	{
+	  width: 100%;
+	  height: 200px;
+	  margin-bottom: 50px;
+	  padding-right: 20px;
+	}
+
+	#submit
+	{
+	 	/*display: block;*/
+	 	font-family: 'Source Sans Pro', sans-serif;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		/*margin: 0 auto;*/
+		width: 200px;
+		height: 45px;
+		padding: 15px;
+		text-align: center;
+		margin-top: -30px;
+		margin-left: -1px;
+		border-radius: 25px;
+		color: #fff;
+		background-color: #68C20E;
+		-webkit-transition: color 0.4s ease-out;
+	  	-moz-transition: color 0.4s ease-out;
+	  	-o-transition: color 0.4s ease-out;
+	  	transition: color 0.4s ease-out;
+		
+
+	}
+
+	#submit:hover
+	{
+		background-color: #417505;
+	}
+
+	/*end of contact page*/
+
+	/* Project section structure */
+	.projectsContainer
+	{	
+		display: flex;
+		flex-direction: column;
+
+	}
+	
+	.projectsLibrary
+	{
+		display: flex;
+		flex-direction: row;
+
+	}
+	
+
+	
+	/* Contact section structure */
+	.contactForm
+	{
+		width: 700px;
+		height: 450px;
+		padding: 20px;
+		margin: 0 auto;
+		
+	}
+
+
+	
+/*this section is by aaron*/
 /* Modal media query structure */
 
 	.card-container 
@@ -1547,3 +2234,5 @@ input, textarea
 
 
 }
+
+
