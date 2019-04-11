@@ -49,7 +49,6 @@ a
 
 label
 {
-    text-align: left;
     font-size: 12px;
     letter-spacing: 0.03em;
 }
@@ -272,6 +271,7 @@ article
     border-radius: 50px;
     margin: 0 auto;
 }
+
 /******************************************/
 /* Modal buttons section */
 
@@ -294,46 +294,6 @@ article
   padding: 20px;
   margin: 10px;
 }
-
-/*.button 
-{
-  background-color: blue;
-  border: 2px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  padding: 10px 28px;
-  color: white;
-  margin-top: 10px;
-  display: inline-block;
-  
-}
-
-.button:hover
-{
-    background-color: white;
-    color: blue;
-    border: 2px solid blue;
-}
-*/
-
-/* Space the feature images with padding */
-.projectsLibrary
-{
-	margin-bottom: 30px;
-	padding: 10px;
-}
-
-.projectImage
-{
-	color: #fff;
-	min-width: 50%;
-	height: 400px;
-	background-color: Slateblue;
-	text-align: center; 
-	margin-bottom: 20px;
-	
-}
-
 
 /* About section structure */
 .aboutTitle_1
@@ -519,7 +479,7 @@ article
 
 /* Contact section structure */
 
-.sectionTitle p
+.contactProducts p
 {
 	font-size: 18px;
 	letter-spacing: 0.03em;
@@ -683,13 +643,453 @@ article
 
 /*end of the contact page*/
 
+/*section for aaron starts*/
+/* MODAL STARTS HERE */
+/* justify content horizontally and verically with align-items */
+/* display none will hide it then you reveal it Javascript */
+.card-container 
+{
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-/* Mobile Footer */
+.card 
+{
+	width: 230px;
+	height: 300px;
+	border: 1px solid darkgray;
+	border-radius: 3px;
+	margin: 10px;
+}
+
+.bgModal
+{ 
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+#instructionCon
+{ 
+  line-height: 24px;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin: 0 auto;
+}
+
+#intro
+{
+  margin-bottom: 40px;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 40px;
+}
+
+/* Estbalishing the border in the middle */
+#contactArea
+{
+  width: 469px;
+  border-right: solid 1px #ccc;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #000;
+
+}
+
+#contactText
+{
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+/* Small gray text*/
+#smallTitle
+{
+  font-size: 14px;
+  color: #c2c2c2;
+  margin-bottom: 5px;
+}
+
+/* Donate text */
+#contactsubText
+{
+  font-size: 12px;
+  color: #c2c2c2;
+  margin-bottom: 10px;
+}
+
+/* Donate Button styling */
+#donateCon
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+#donateCon:second-child
+{
+  margin-left: 10px;
+}
+
+#donateCon a
+{
+  text-decoration: none;
+}
+
+/* Button sytling */
+.donateBut
+{
+  width: 60px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #68C20E;
+}
+
+.donateBut:hover
+{
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #417505;
+}
+
+input, textarea
+{
+  display: block;
+  padding: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 280px;
+  border: 1px solid #999;
+  border-style: none;
+  background-color: #ececec;
+}
+
+#comments
+{
+  width: 280px;
+  height: 50px;
+}
+
+.submit
+{
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  width: 200px;
+  padding: 21px 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  background-color: #68C20E;
+  margin: 0 auto;
+}
+
+.submit:hover
+{
+  background-color: #417505;
+}
+
+/* The '+' positioned to its closest parent which is the modal */
+.modalContent
+{ 
+	top: 100%;
+    bottom: 100%;
+    position: relative;
+    width: 320px;
+    height: 790px;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* Universal button styling */
+.button
+{
+  display: block;
+  position: relative;
+  width: 200px;
+  background-color: ;
+  padding: 21px 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+/* Universal button styling */
+.button:hover
+{
+  display: block;
+  position: relative;
+  width: 200px;
+  background-color: ;
+  padding: 21px 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.close
+{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: #000;
+}
+
+
+/*****************************************/
+.hero
+{
+	height: 450px;
+  	margin-top: 40px;
+  	margin-bottom: 30px;
+
+}
+
+.hero
+	{
+	background: 
+		linear-gradient(
+	    rgba(0, 0, 0, 0.3), 
+	    rgba(0, 0, 0, 0.3)
+    ),
+	    url(../images/traa_hero_3.jpg) no-repeat center;
+	}
+
+
+/* Hero section stucture */
+.heroCon
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	min-width: 340px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.heroCon h3
+{
+	margin-top: 40px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Noticia Text', Georgia, serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.03em;
+	margin-top: 45px;
+	margin-bottom: 40px;
+
+}
+
+.heroCon p
+{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.projectCon p
+{
+	margin-bottom: 40px;
+}
+
+/* Space the feature images with padding */
+.projectsLibrary
+{
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+.projectsInfo
+{
+	min-width: 250px;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+ /* Highlight text in yellow */ 
+#highLight
+{
+	color: #CA9731;
+}
+
+/* Trout and Rob Building Section  /* Black by default */
+.subTitle
+{
+	font-family: 'Noticia Text', Georgia, serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.03em;
+	text-align: center; 
+	margin-top: 40px; 
+	margin-bottom: 40px;
+}
+
+.subtitleCopy 
+{
+	max-width: 310px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+/* Push the */
+.column2{
+	margin-top: 40px;
+}
+
+#sectionTint
+{
+	width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 450px;
+}
+
+
+.fundingCon
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.fundingCon h3
+{
+	color: #fff;
+	margin-top: 90px;
+}
+
+.fundingCon p
+{	max-width: 250px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.fundingHero
+{
+	background:url(../images/vashishtha-jogi-66779-unsplash_funding_3.jpg) no-repeat center;
+	height: 450px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.shopHero
+{
+	background:url(../images/traa_shop_2.jpg) no-repeat center;
+	height: 450px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.shopCon
+{
+	margin-top: 50px;
+}
+
+.sectionQuote p
+{
+	padding: 30px;
+	font-family: 'Noticia Text', Georgia, serif;
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin: 0 auto;
+}
+/*  Volunteer Section Structure */
+
+.volunteerCon
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.volunteerPerson
+{
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	color: #000;
+	font-weight: 600;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.column6
+{
+	background-color: #F8F9F9;
+	box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+    0 5px 15px 0 rgba(0,0,0,0.08);	
+}
+
+.column6 p
+{
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	color: #696969;
+	font-weight: 300;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
 
 .column8
 {
 	text-align: left;
 }
+
+/* Volunteer Section gapping */
+.volunteer
+{
+	margin-bottom: 40px;
+}
+
+/* Partner section structure */
+.partnerCon
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.partnerCon .column7
+{
+	margin-bottom: 40px;
+}
+/*this is the section for aaron*/
+
+/* Mobile Footer */
 
 .footerCon
 {
@@ -765,17 +1165,99 @@ article
 }
 
 
+
+/* Mobile section structure */
+.projectfeature-title h2
+{
+	font-family: 'Noticia Text', Georgia, serif;
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+
+.projectfeature-title p
+{
+	text-align: center;
+	margin: 0 auto;	
+	margin-bottom: 40px;
+}
+
+.italicStyle
+{
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+/* Target the gray explainer text */
+#labelGray
+{
+	display: block;
+	text-align: left;
+	color:#c2c2c2;
+}
+
+/* Membership card */
+.membershipCon
+{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+}
+
+.membership_card_1
+{
+	background:url(../images/membership_card.png) no-repeat center;
+	height: 407px;
+	margin-bottom: 20px;
+}
+
+.membership_card_2
+{
+	background:url(../images/membership_card.png) no-repeat center;
+	height: 407px;
+	margin-bottom: 20px;
+}
+
+.membershipSubtext
+{
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.membershipTitle
+{
+	font-family: 'Noticia Text', Georgia, serif;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	margin-top: 70px;
+}
+
+#membershipPrice
+{
+	padding: 50px;
+	font-size: 60px;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	text-align: center;	
+}
+
+.membership_card_1
+	{
+		margin-bottom: 40px;
+	}
+
 /******** MEDIA QUERY START **********/
 /************************************/
 /* At 641 pixels and above do this */
 @media screen and (min-width: 641px){
-	
-	.Products
-	{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
 
 	/* Display content side by side */
 	.topInfo
@@ -796,6 +1278,11 @@ article
 	{
 		color: #fff;
 	}
+
+	/*start of aaron's section*/
+	
+	/*end of arrons section*/
+
 	
 	/* Display content side by side */
 	#mainHeader
@@ -1274,6 +1761,15 @@ article
 		margin: 0 auto;
 		
 	}
+
+	/* Target the gray explainer text */
+	#labelGray
+	{
+		text-align: left;
+		color:#c2c2c2;
+		margin-right: 0;
+	} 
+
 	/* Desktop footer structure */
 	.footerService 
 	{
@@ -1288,16 +1784,6 @@ article
 	}
 /********************************/
 
-/*	.sectionTitle h2
-	{
-		font-family: 'Noticia Text', serif;
-		font-weight: 700;
-		font-size: 36px;
-		letter-spacing: 0.03em;
-		text-align: center;
-		margin-bottom: 20px;
-	}
-*/
 
 /*about page start*/
 
@@ -1473,25 +1959,6 @@ article
 
 /*start of contact page*/
 	
-	/*.contactTitle h2
-	{
-		font-family: 'Noticia Text', serif;
-		font-weight: 700;
-		font-size: 24px;
-		letter-spacing: 0.03em;
-		text-align: center;
-		margin-bottom: 20px;
-		margin-top: 50px;
-	}
-
-	.contactTitle p
-	{
-		font-size: 18px;
-		letter-spacing: 0.03em;
-		text-align: center;
-		margin-bottom: 50px;
-	}
-	*/
     #googleMap
     {
     	padding-bottom:56.25%;
@@ -1629,45 +2096,8 @@ article
 		background-color: #417505;
 	}
 
+	/*end of contact page*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*end of contact page*/
-
-
-	.column5
-	{
-		background-color: purple;
-		width: 100%;
-	}
-
-	.column7
-	{
-		background-color: purple;
-		width: 50%;
-	}
 	/* Project section structure */
 	.projectsContainer
 	{	
@@ -1683,18 +2113,6 @@ article
 
 	}
 	
-	.projectImage
-	{
-		background-color: purple;
-		min-width: 40%;
-		color: #fff;
-		margin-right: 40px;
-
-	}
-
-	
-	
-
 
 	
 	/* Contact section structure */
@@ -1709,4 +2127,126 @@ article
 
 
 	
+/*this section is by aaron*/
+/* Modal media query structure */
+
+	.card-container 
+	{
+		max-width: 800px;
+		margin: 50px auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: red;
+	}
+	
+	#contactArea
+	{
+		width: 469px;
+		border-right: solid 1px #ccc;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		color: #000;
+	}
+
+	.card 
+	{
+		width: 230px;
+		height: 300px;
+		border: 1px solid darkgray;
+		border-radius: 3px;
+		margin: 10px;
+	}
+
+	/* Desktop Modal */
+	.bgModal
+	{ 
+		visibility: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		position: absolute;
+		top: 0;
+		z-index: 1;
+
+	}
+
+  	.modalContent 
+  	{
+		top: 100%;
+	    bottom: 100%;
+	    position: relative;
+	    max-width: 320px;
+	    height: 790px;
+	    background-color: #fff;
+	    border-radius: 4px;
+	    z-index: 1;
+ 	 }
+
+
+  #comments
+	{
+		max-width: 320px;
+		height: 50px;
+	}
+
+  .close
+	{
+		position: absolute;
+		top: 0;
+		right: 14px;
+		font-size: 42px;
+		transform: rotate(45deg);
+		cursor: pointer;
+		color: #000;
+	}
+
+	.projectfeature-title h2
+	{
+		font-family: 'Noticia Text', Georgia, serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 0.03em;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	/* Desktop section structure */
+	.projectfeature-title p
+	{		
+		text-align: left;
+		margin-bottom: 40px;
+	}
+
+	.italicStyle
+	{
+		font-family: 'Source Sans Pro', Arial, sans-serif;
+		font-weight: 600;
+		font-size: 12px;
+		font-style: italic;
+	}
+
+	.membershipCon
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-around;
+	}
+
+	.membershipSubtext
+	{
+		max-width: 700px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+
+
+
 }
+
+

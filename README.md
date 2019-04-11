@@ -24,4 +24,10 @@ Mobile to Desktop Thames River Anglers Association Website
  - information about google map (location of the TRAA)
  - Contact form section to fill up their information to create it 
  
+
+###### Merging notes 
+	
+	*Current issues with master branch merge*
+	- index.html does not work properly on reponsive view mode, rest of the pages does work without issue.
  
+
