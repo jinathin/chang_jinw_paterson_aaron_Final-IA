@@ -29,5 +29,5 @@ Mobile to Desktop Thames River Anglers Association Website
 	
 	*Current issues with master branch merge*
 	- index.html does not work properly on reponsive view mode, rest of the pages does work without issue.
- 
-
+ 	- Squash bugs after pulling to the Repo. Fixed index, about, contact, membership, projects, & shopp page.
+ 	- fixed modal - Kinda! Thank Marco && Trevor 

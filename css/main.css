@@ -1194,7 +1194,7 @@ input, textarea
 }
 
 /* Target the gray explainer text */
-#labelGray
+.labelGray
 {
 	display: block;
 	text-align: left;
@@ -1253,6 +1253,167 @@ input, textarea
 	{
 		margin-bottom: 40px;
 	}
+	/* Membership card */
+.membershipCon
+{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+}
+
+.membership_card_1
+{
+	background:url(../images/membership_card.png) no-repeat center;
+	height: 407px;
+	margin-bottom: 20px;
+}
+
+.membership_card_1:hover
+{	
+	opacity: 0.7;
+  	filter: alpha(opacity=50); /* For IE8 and earlier */
+
+}
+
+.membership_card_2:hover
+{	
+	opacity: 0.7;
+  	filter: alpha(opacity=50); /* For IE8 and earlier */
+
+}
+
+
+.membership_card_2
+{
+	background:url(../images/membership_card.png) no-repeat center;
+	height: 407px;
+	margin-bottom: 20px;
+}
+
+.membershipSubtext
+{
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.membershipTitle
+{
+	font-family: 'Noticia Text', Georgia, serif;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	margin-top: 70px;
+}
+
+.membershipPrice
+{
+	margin-bottom: 29px;
+    padding: 18px;
+    font-size: 60px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    text-align: center;	
+}
+
+.membership_card_1
+{
+	margin-bottom: 40px;
+}
+
+/* Keyline for membership page */
+hr
+{
+	display: inline-block;
+	width: 60px;
+	margin-top: 20px;
+}
+
+/* Shop section stucture mobile  */
+.productCon
+{
+	display: flex;
+	flex-direction: column;
+}
+
+/* Clothing wrapper */
+.productItem
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 350px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+/* tshirt image */
+.T-Shirt
+{
+	padding: 20px;
+	margin: 0 auto;
+}
+
+/* image color selection */
+#T-Shirt_color
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.shopTitle
+{
+	flex-grow: 1;
+}
+
+#shopsubText
+{
+	font-size: 13px;
+	color: #696969;
+	margin-bottom: 40px;
+}
+
+.shopTitle h2
+{
+	max-width: 5%
+	padding: 20px;
+	font-weight: 600;
+	font-size: 26px;
+	text-align: left;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
+
+.shopsubTitle
+{
+	font-size: 24px;
+	font-weight: 400;
+	color: #d4d4d4;
+}
+
+#formQuantity
+{
+	width: 50px;
+}
+
+.shopPerks
+{
+	margin-top: 40px;
+}
+
+.shopclothing-text
+{
+	font-size: 16px;
+	max-width: 85%;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: left;
+}
+/* Shop end mobile */
 
 /******** MEDIA QUERY START **********/
 /************************************/
@@ -1420,7 +1581,25 @@ input, textarea
 	    width: 100%;
 	}
 
+	/* Make the Membership padding green */
+	#hightlightGreen
+	{
+	    background-color: #417505;
+	    padding: 14px;
+	    border-radius: 50px;
+	    color: #fff;
+	}
+
+	#hightlightGreen:hover
+	{
+  		background-color: #254500;
+	    padding: 14px;
+	    border-radius: 50px;
+	    color: #fff;
+	}		
+	
 /* End menu  drop-down */
+
 /* General section title universal structure for Desktop */
 
 	.sectionTitle
@@ -1439,8 +1618,6 @@ input, textarea
 		margin-bottom: 20px;
 	}
 
-
-
 	.sectionQuote p
 	{
 		max-width: 900px;
@@ -1453,6 +1630,8 @@ input, textarea
 		margin: 0 auto;
 	}
 
+
+	
 /* Column structure */
 	.column1
 	{
@@ -2172,7 +2351,6 @@ input, textarea
 	    z-index: 2;
  	 }
 
-
   #comments
 	{
 		max-width: 320px;
@@ -2230,8 +2408,36 @@ input, textarea
 		margin-bottom: 20px;
 	}
 
+	/* Desktop clothing section  */
+	.productItem
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		max-width: 500px;
+		padding: 5px;
+		margin-left: 30px;
+	}
+
+	.shopTitle
+	{
+		flex-grow: 1;
+	}
+	
+	.shopclothing-text
+	{
+		font-size: 16px;
+	/*	max-width: 300px;
+	*/	margin: 0 auto;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
 
 
+}
+
+	
 
 }
 
