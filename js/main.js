@@ -24,7 +24,7 @@
 	// get the button with the id call button
 	document.getElementById('donateBut').addEventListener("click", function(e) {
 		// Kill default behavior
-		e.preventDefault();
+		// e.preventDefault();
 		document.querySelector('.bgModal').style.visibility = "visible";
 	});
 
