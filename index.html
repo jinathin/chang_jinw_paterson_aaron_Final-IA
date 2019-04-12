@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,400i,700,700i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,700" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -48,10 +48,10 @@
 				<ul id="burgerMenu">
 					<li><a href="index.html">Home</a>
 						<ul class="nav-dropdown">
-			            	<li><a id="section1Btn" href="#!">Funding</a></li>
-			            	<li><a href="#!">Newsfeed</a></li>
-			            	<li><a href="#!">Volunteers</a></li>
-			            	<li><a href="#!">Partners</a></li>
+			            	<li><a href="#section1" id="section1Btn">Funding</a></li>
+			            	<li><a href="#section2" id="section2Btn">Newsfeed</a></li>
+			            	<li><a href="#section3" id="section3Btn">Volunteers</a></li>
+			            	<li><a href="#section4" id="section4Btn">Partners</a></li>
 			          </ul>
 					</li>
 					<li><a href="about.html">About</a></li>
@@ -131,10 +131,10 @@
 	                <ul>
 	                  	<li><a href="index.html">Home</a>
 							<ul class="nav-dropdown">
-				            	<li><a id="section1Btn" href="#!">Funding</a></li>
-				            	<li><a href="#!">Newsfeed</a></li>
-				            	<li><a href="#!">Volunteers</a></li>
-				            	<li><a href="#!">Partners</a></li>
+				            	<li><a href="#section1" id="section1Btn">Funding</a></li>
+				            	<li><a href="#section2" id="section2Btn">Newsfeed</a></li>
+				            	<li><a href="#section3" id="section3Btn">Volunteers</a></li>
+				            	<li><a href="#section4" id="section4Btn">Partners</a></li>
 				          </ul>
 						</li>
 						<li><a href="about.html">About</a></li>
@@ -217,7 +217,7 @@
 			<!-- Tint -->
 			<div id="sectionTint">
 				<div class="fundingCon"> 
-					<h3 class="subTitle">Funding</h3>
+					<h3 class="subTitle" id="section1">Funding</h3>
 						<p class="subtitleCopy">
 							Efforts are underway to get the funding we need to continue many of the TRAA's most vital projects:
 						</p>
@@ -234,7 +234,7 @@
 			<!-- Tint -->
 			<div id="sectionTint">
 				<div class="fundingCon"> 
-					<h3 class="subTitle">Shop</h3>
+					<h3 class="subTitle" id="section2">Shop</h3>
 						<p class="subtitleCopy">
 							Many of you have already ordered the
 							TRAA tee shirts, but if you haven't
@@ -246,16 +246,16 @@
 				</div>
 			</div>		
 		</section>
-		<!-- Section title -->
-		<div class="sectionTitle"><h2>Newsfeed</h2></div>
+		<!-- Newsfeed title -->
+		<div class="sectionTitle" id="section3"><h2>Newsfeed</h2></div>
 		<section class="products">
 			<h2 class="hidden"> Newsfeed</h2>
 			<div class="box column5"><h3>Instagram Feed</h3></div>
 		</section>
 		<!-- Volunteer section -->
-		<div class="sectionTitle"><h2>Volunteers</h2></div>
+		<div class="sectionTitle" id="section4"><h2>Volunteers</h2></div>
 		<section class="products">
-			<h2 class="hidden">Volunteers  Section</h2>
+			<h2 class="hidden">Volunteers Section</h2>
 				<div class=" box column6">
 					<img src="images/volunteer_img_1.png" width="150" height="150" alt="volunteer image">
 					<h3 class="volunteerPerson">Terry McGuiness</h3>
@@ -322,7 +322,7 @@
 				</div>
 		</section>
 		<!-- Partner section -->
-		<div class="sectionTitle"><h2>Partners</h2></div>
+		<div class="sectionTitle" id="section4"><h2>Partners</h2></div>
 		<section class="partnerCon products">
 			<h2 class="hidden">Partners</h2>
 			<div class="column7">
