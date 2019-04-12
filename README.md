@@ -6,6 +6,17 @@ Mobile to Desktop Thames River Anglers Association Website
  - then filling up inside the content 
  - creating 
 
+###### Index page
+ 
+ Index page features many contents
+ - banner with about page info
+ - project section with brief info
+ - donate section where you can click to bring out donate modal to donate for TRAA
+ - Shop section that leads to shop page
+ - news feed page/instagram section 
+ - volunteers section for key memebers 
+ - key partners for TRAA
+
 ###### about page 
 
  about page feats these elements
@@ -19,11 +30,33 @@ Mobile to Desktop Thames River Anglers Association Website
 
 ###### Contact page 
 
-
  contact page feats these elements
  - information about google map (location of the TRAA)
  - Contact form section to fill up their information to create it 
+
+###### Event page
  
+ Event page features gallery section with 
+ - images boxes with on hover elements
+ - video pop up for TRAA
+
+###### Project page & Hatchery page
+
+ Project page features 2 pages
+ - 1st page shows thumbnail for projects TRAA is working on
+ - when you click the button it leads to 2nd page
+ - 2nd page has detailed information + chart data images 
+
+###### Shop page
+
+ Shop page features items 
+ - you can select items from 1 to 5 
+
+###### Membership Page
+ 
+ memebership page features 2 plan for different price and offers
+ - one for $25
+ - 2nd plan is $35
 
 ###### Merging notes 
 	
