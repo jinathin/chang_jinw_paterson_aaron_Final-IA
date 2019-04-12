@@ -1,6 +1,8 @@
 // JavaScript Document
 
 (function() {
+
+	
 	// hamburger function 
 	"use strict"
 	console.log("Linked up");
@@ -36,6 +38,5 @@
 
 	});
 
-	
 
 })();
