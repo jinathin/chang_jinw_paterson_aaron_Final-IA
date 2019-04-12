@@ -89,10 +89,8 @@ article
 {
   background-color: #417505;
   color: #fff;
-  border-radius: 5px;
   padding: 20px;
   text-align: center;
-  margin: 10px;
 }
 
 /* Top navigation structure */
@@ -291,9 +289,7 @@ article
 .box 
 {
   color: #fff;
-  border-radius: 5px;
   padding: 20px;
-  margin: 10px;
 }
 
 /* About section structure */
@@ -470,8 +466,6 @@ article
 	z-index: -2;
 	margin-top: 150px;
 	margin-bottom: -130px;
-	padding-right: 10px;
-	padding-left: 10px;
 
 }
 
@@ -1096,10 +1090,8 @@ input, textarea
 {
 	background-color:  #254500;
 	color: #fff;
-	border-radius: 5px;
 	padding: 20px;
 	text-align: center;
-	margin: 10px;
 	margin-top: 120px;
 }
 
@@ -2145,8 +2137,6 @@ hr
 		position: relative;
 		z-index: -2;
 		margin-bottom: -130px;
-		padding-right: 10px;
-		padding-left: 10px;
 	}
 
 	.aboutColumn
