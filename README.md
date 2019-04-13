@@ -64,3 +64,11 @@ Mobile to Desktop Thames River Anglers Association Website
 	- index.html does not work properly on reponsive view mode, rest of the pages does work without issue.
  	- Squash bugs after pulling to the Repo. Fixed index, about, contact, membership, projects, & shopp page.
  	- fixed modal - Kinda! Thank Marco && Trevor 
+
+
+##### fixing Jarrods suggests and comments
+	* Current Issues
+	- hero image looks a little muddy solution, lightened the dark hue a little to fit a linear graient instead. 
+	- changed the point sizes for the section titles.
+	- Jin is working on amending the Map API 
+	- 
