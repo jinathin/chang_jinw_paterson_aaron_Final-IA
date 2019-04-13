@@ -483,15 +483,12 @@ article
 
 #googleMap
 {
-	display: flex;
+	display: block;
 	align-items: center;
-	flex-direction: column;
-	/*height: 600px;*/
-	overflow:hidden;
+	overflow: hidden;
     padding-bottom: 100%;
-    position:relative;
+    position: relative;
     height: 0;
-	z-index: -1;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -502,7 +499,7 @@ article
     top:0;
     height:100%;
     width:100%;
-    position:absolute;
+    position: absolute;
  	border-radius: 5px;
 }
 
@@ -1518,7 +1515,6 @@ hr
 /* Gallery frame */
 .galleryFrame
 {
-	background-color: #c1c1c1;
 	padding: 2px;
 	text-align: center;
 	margin: 5px;
@@ -1535,6 +1531,82 @@ hr
 	transition-delay: 0.2s;
 	z-index: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* add styles here for lightbox and video */
+.lightbox 
+{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 615%;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: none;
+	z-index: 1;
+}
+
+.lightbox-on
+{
+	display: block;
+}
+
+.lightbox-close
+{
+	position: absolute;
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+	right: 20px;
+	top: 540px;
+}
+
+video {
+	width: 80%;
+	margin-top: 150%;
+	border: thin solid #949393;
+}
+/*end of the video for the event page mobile */
+
 
 /******** MEDIA QUERY START **********/
 /************************************/
@@ -2645,7 +2717,88 @@ hr
 	}
 
 	/*end of the salmonid project section*/
+	
+	
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*section for video of the event*/
+	.lightbox 
+	{
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height: 247%;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.9);
+		display: none;
+	}
+
+	.lightbox-on
+	{
+		display: block;
+	}
+
+	.lightbox-close
+	{
+		position: absolute;
+		color: white;
+		font-size: 2rem;
+		cursor: pointer;
+		margin-right: 90px;
+		right: 10px;
+		top: 100px;
+	}
+
+	video {
+		width: 80%;
+		margin-top: 10%;
+		border: thin solid #949393;
+}
 
 }
 
