@@ -1207,6 +1207,7 @@ input, textarea
 	background:url(../images/membership_card.png) no-repeat center;
 	height: 407px;
 	margin-bottom: 20px;
+	cursor: pointer;
 }
 
 .membership_card_2
@@ -1214,6 +1215,7 @@ input, textarea
 	background:url(../images/membership_card.png) no-repeat center;
 	height: 407px;
 	margin-bottom: 20px;
+	cursor: pointer;
 }
 
 .membershipSubtext
@@ -1349,7 +1351,7 @@ hr
 }
 
 /* image color selection */
-#T-Shirt_color
+.T-Shirt_color
 {
 	display: flex;
 	flex-direction: row;
@@ -1458,7 +1460,7 @@ hr
 }
 
 
-#floatedLeft
+.floatedLeft
 {
 	/*width: 533px;*/
 	float: left;
@@ -1467,7 +1469,7 @@ hr
 }
 
 /* text wrap */
-#floatedRight
+.floatedRight
 {
 	/*width: 400px;*/
 	float: right;
@@ -1605,6 +1607,7 @@ hr
 		margin-left: 20px;
 		margin-right: 20px;
 		flex: 0 1 200px;
+		cursor: pointer;
 	}
 
 	/* Logo desktop sizing */
@@ -1651,7 +1654,6 @@ hr
 		display: block;
 		color: #fff;
 		float: left;
-		padding: 10px;
 		position: relative;
 		text-decoration: none;
 		transition-duration: 0.2s;
@@ -1792,6 +1794,7 @@ hr
 	.column5
 	{
 		width: 100%;
+		height: auto;
 	}
 
 	.column6
@@ -1816,17 +1819,18 @@ hr
 	}
 	
 	/******************************/
-	/* Project section structure */
+	/* Hero  section structure */
 	.hero
 	{
 		background: 
 			linear-gradient(
-		    rgba(0, 0, 0, 0.3), 
+		    rgba(0, 0, 0, 0.1), 
 		    rgba(0, 0, 0, 0.3)
 	    ),
 	    url(../images/traa_hero_1.jpg) no-repeat center;
 	}
 
+	/* Project section structure */
 	.projectsContainer
 	{	
 		display: flex;
@@ -2556,7 +2560,6 @@ hr
 
 	/*salmonid project desktop section*/
 	
-
 	#hatcheryInfo h3
 	{
 		font-family: 'Noticia Text', Georgia, serif;
@@ -2618,12 +2621,13 @@ hr
 		margin-left: 45px;
 	}
 
-	#floatedLeft
+	.floatedLeft
 	{
 		display: flex;
 		flex-direction: column;
 		padding: 20px;
 	}
+
 	/*#floatedLeft img
 	{
 		display: flex;
@@ -2631,7 +2635,7 @@ hr
 		
 	}*/
 
-	#floatedRight
+	.floatedRight
 	{
 		width: 50%;
 		float: right;

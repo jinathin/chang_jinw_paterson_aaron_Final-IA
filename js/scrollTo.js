@@ -1,27 +1,31 @@
-
 // Greensock ScrollTo
 
-(function(){
-	"use strict";
 
-	// collection fo the button for tor for loop
-	let links = document.querySelectorAll(".nav-dropdown a");
-	console.log(links);
+(function () {
+    "use strict";
 
-	// event handler
-	function scrollLink(e) {
-		console.log(e.currentTarget.id.slice(0,-3));
+    // collection fo the button for tor for loop
+    let links = document.querySelectorAll(".nav-dropdown a");
+    console.log(links);
 
-		e.preventDefault();
-		let targetArea = e.currentTarget.id.slice(0,-3);
-		TweenLite.to(window, 1, (scrollTo:{y:`#${targetArea}`, offsetY:70, autoKill:false}});
-	}
+    // event handler
+    function scrollLink(e) {
+        console.log(e.currentTarget.id.slice(0,-3));
 
-	// for loop setting your count to zero aith 'i'
-	for(var i=0; i < links.length; i++) {
-		// add the event listeners to the links[0], [1], [2]
-		links[i].addEventListener("click", scrollLink);
-	}
+        e.preventDefault();
+        let targetArea = e.currentTarget.id.slice(0,-3);
+        TweenLite.to(window, 1, (scrollTo:{y: `#${targetArea}`, offsetY:70, ease: Power3.easeOut, autoKill:false}});
+
+        function myAutoKillFunction(){
+            alert("autokill");
+        }    
+    }
+
+    // for loop setting your count to zero aith 'i'
+    for(var i=0; i < links.length; i++) {
+        // add the event listeners to the links[0], [1], [2]
+        links[i].addEventListener("click", scrollLink);
+    }
 
 })();
 
