@@ -64,3 +64,32 @@ Mobile to Desktop Thames River Anglers Association Website
 	- index.html does not work properly on reponsive view mode, rest of the pages does work without issue.
  	- Squash bugs after pulling to the Repo. Fixed index, about, contact, membership, projects, & shopp page.
  	- fixed modal - Kinda! Thank Marco && Trevor 
+
+
+##### fixing Jarrods suggests and comments
+	* Current Issues
+	- hero image looks a little muddy solution, lightened the dark hue a little to fit a linear graient instead. 
+	- changed the point sizes for the section titles.
+	- Jin is working on amending the Map API 
+
+##### Final notes
+	- everything works as intended 
+	- fixed map issue 
+	- everything looks the way its supposed in mobile view as well as desktop view 
+
+##### Note for Trevor 
+	
+	Dev/Des - Aaron Paterson
+	Dev/Des - Jin Chang
+	Thames River Anglers Association
+	Written Plan for any JS functions
+	Implement a gallery 3 row by 3 columns.
+	Create pop-up video from the gallery image
+	Create a hover opacity 0.3 for the gallery images
+	*unfortunately this was not successful from the codepen example. There is some code missing.
+	Creating the ‘school of fish’ svg animation then program it to walk across the screen
+	Use Greensock scrollTo function for the
+	Desktop dropdown - Menu
+	However the smooth aspect is not working
+	Post Instagram feed relating to the fishing experience.
+	One of the many things you can do with the organization.
