@@ -483,15 +483,12 @@ article
 
 #googleMap
 {
-	display: flex;
+	display: block;
 	align-items: center;
-	flex-direction: column;
-	/*height: 600px;*/
-	overflow:hidden;
+	overflow: hidden;
     padding-bottom: 100%;
-    position:relative;
+    position: relative;
     height: 0;
-	z-index: -1;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -502,7 +499,7 @@ article
     top:0;
     height:100%;
     width:100%;
-    position:absolute;
+    position: absolute;
  	border-radius: 5px;
 }
 
@@ -822,7 +819,6 @@ input, textarea
   display: block;
   position: relative;
   width: 200px;
-  background-color: ;
   padding: 21px 10px;
   text-align: center;
   color: #fff;
@@ -836,7 +832,6 @@ input, textarea
   display: block;
   position: relative;
   width: 200px;
-  background-color: ;
   padding: 21px 10px;
   text-align: center;
   color: #fff;
@@ -877,7 +872,7 @@ input, textarea
 
 
 /* Hero section stucture */
-.heroCon
+.heroFeature
 {
 	display: flex;
     flex-direction: column;
@@ -887,7 +882,7 @@ input, textarea
 	padding: 30px;
 }
 
-.heroCon h3
+.heroFeature h3
 {
 	margin-top: 40px;
 	text-align: center;
@@ -902,7 +897,7 @@ input, textarea
 
 }
 
-.heroCon p
+.heroFeature p
 {
 	color: #fff;
 	text-align: center;
@@ -1537,6 +1532,44 @@ hr
 	z-index: 1;
 }
 
+
+/* add styles here for lightbox and video */
+.lightbox 
+{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 615%;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: none;
+	z-index: 1;
+}
+
+.lightbox-on
+{
+	display: block;
+}
+
+.lightbox-close
+{
+	position: absolute;
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+	right: 20px;
+	top: 540px;
+}
+
+video {
+	width: 80%;
+	margin-top: 150%;
+	border: thin solid #949393;
+}
+
+/*end of the video for the event page mobile */
+
+
 /******** MEDIA QUERY START **********/
 /************************************/
 /* At 641 pixels and above do this */
@@ -1851,13 +1884,13 @@ hr
 		margin-right: 40px;
 	}
 
-	.heroCon
+	.heroFeature
 	{
 		max-width: 540px;
 		margin: 0 auto;
 	}
 
-	.heroCon h3
+	.heroFeature h3
 	{
 		margin-top: 40px;
 		text-align: center;
@@ -1871,7 +1904,7 @@ hr
 		margin-bottom: 30px;
 	}
 
-	.heroCon p
+	.heroFeature p
 	{
 		color: #fff;
 		text-align: center;
@@ -2648,6 +2681,65 @@ hr
 	}
 
 	/*end of the salmonid project section*/
+
+
+	/*section for video of the event*/
+	.lightbox 
+	{
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height: 247%;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.9);
+		display: none;
+	}
+
+	.lightbox-on
+	{
+		display: block;
+	}
+
+	.lightbox-close
+	{
+		position: absolute;
+		color: white;
+		font-size: 2rem;
+		cursor: pointer;
+		margin-right: 90px;
+		right: 10px;
+		top: 100px;
+	}
+
+	video {
+		width: 80%;
+		margin-top: 10%;
+		border: thin solid #949393;
+	}
+
+}
+
+
+/*************** 1024 MEDIA QUERY BAND UP ***************/
+/******************************************/
+
+@media screen and (min-width: 789px){
+
+.hero
+	{
+	/*background: 
+		linear-gradient(
+	    rgba(0, 0, 0, 0.3), 
+	    rgba(0, 0, 0, 0.3)
+    ),
+	    url(../images/traa_hero_0.jpg) no-repeat center;*/
+	}
+
+
+	
+
+
+
 
 
 }

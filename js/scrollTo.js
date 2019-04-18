@@ -14,7 +14,7 @@
 
         e.preventDefault();
         let targetArea = e.currentTarget.id.slice(0,-3);
-        TweenLite.to(window, 1, (scrollTo:{y: `#${targetArea}`, offsetY:70, ease: Power3.easeOut, autoKill:false}});
+        TweenLite.to(window, 1, {scrollTo:{y: `#${targetArea}`, offsetY:70, ease: Power3.easeOut, autoKill:false}});
 
         function myAutoKillFunction(){
             alert("autokill");
